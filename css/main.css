@@ -32,7 +32,17 @@ html {
   -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+    margin: 60px auto;
+    width: 70%;
+}
+nav ul, footer ul {
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
 }
 a:focus {
   outline: thin dotted;
@@ -235,6 +245,17 @@ h5 {
 }
 h6 {
   font-size: 1.15em;
+}
+footer {
+    border-top: 1pt solid #586e75;
+    font-size: .8em;
+}
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+ul.posts li {
+    list-style: none;
 }
 .tag {
   background-color: #073642;
