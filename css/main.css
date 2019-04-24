@@ -4,6 +4,7 @@
 body {
     margin: 60px auto;
     width: 70%;
+    background-color: #FBFBFB;
 }
 nav ul, footer ul {
     padding: 0px;
