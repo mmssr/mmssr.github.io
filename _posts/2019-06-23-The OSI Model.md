@@ -4,7 +4,7 @@ title: "The OSI Model"
 date: 2019-06-23
 ---
 
-The Open Systems Interconnection (OSI) model is a method used to describe computer networking. The OSI model creates a common description for how networks function, which is necesary for understanding and discussion documentation as well as functionality. Each layer can be optimized and hardened, and allows for abstraction.\
+The Open Systems Interconnection (OSI) model is a method used to describe computer networking. The OSI model creates a common description for how networks function, which is necesary for understanding and discussion documentation as well as functionality. Each layer can be optimized and hardened, and allows for abstraction.
 
 | Layer | Name | Description |Technologies|Data Unit|Layer Type|  
 |-------|-------|-------|-------|-------|-------|  
