@@ -18,11 +18,11 @@ The Open Systems Interconnection (OSI) model is a method used to describe comput
 
 <h2>Layer 7: Application layer</h2>
 The application layer provides an interface for the end user operating a device connected to a network. This layer is what the user sees, in terms of loading an application (such as Web browser or e-mail); that is, this application layer is the data the user views while using these applications. Examples of application layer functionality include:
-*Support for file transfers
-*Ability to print on a network
-*Electronic mail
-*Electronic messaging
-*Browsing the World Wide Web. 
+*Support for file transfers  
+*Ability to print on a network  
+*Electronic mail  
+*Electronic messaging  
+*Browsing the World Wide Web  
 
 <h2>Layer 6: Presentation layer</h2>
 To be able to properly interpret a message sent through the network this layer is responsible for the proper translation or interpretation. 
