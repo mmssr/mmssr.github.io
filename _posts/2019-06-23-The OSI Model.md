@@ -43,7 +43,7 @@ The Data Layer is mainly the method in which information from the network is bro
 The physical layer refers to electrical and physical aspects of devices. In particular, it specifies how a device sends and receives information, such as using copper wires or fiber-optic cables. Examples of this include Ethernet or fiber optic cables, phone cords used for dial-up or DSL services, the coaxial cable used to provide broadband internet, the wires used to connect various components of a computer or even the radio signals used in wireless communication. Other functions of the physical layer include the conversion of signals into something that another layer can use (referred to as a bit), and adjusting the signal to allow for multiple users to use the same connections. 
 
 <h3>Sources and further reading:</h3>
-[Simple Wikipedia - OSI Model](https://simple.wikipedia.org/wiki/OSI_model/)
+[Simple Wikipedia - OSI Model](https://simple.wikipedia.org/wiki/OSI_model/)  
 [CWNP - Why Does the OSI Reference Model Matter?](https://www.cwnp.com/cwnp-wifi-blog/whytheosimodelmatters/)
 
 Powered by [Jekyll](http://jekyllrb.com)
