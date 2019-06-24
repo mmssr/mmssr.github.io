@@ -5,19 +5,17 @@ date: 2019-06-23
 ---
 
 The Open Systems Interconnection (OSI) model is a method used to describe computer networking. The OSI model creates a common description for how networks function, which is necesary for understanding and discussion documentation as well as functionality. Each layer can be optimized and hardened, and allows for abstraction.
-'''
-+-------+--------------+-------------------------------------------------------------------------------------------+-----------------+-----------+------------+
-| Layer |     Name     |                                        Descriptopn                                        |  Technologies   | Data Unit | Layer Type |
-+-------+--------------+-------------------------------------------------------------------------------------------+-----------------+-----------+------------+
-|     7 | Application  | Network process to computer programs                                                      | FTP, HTTP, SMTP | Data      | Host       |
-|     6 | Presentation | Data representation, security encryption, convert computer code to network formatted code | AFP, MIME       | Data      | Host       |
-|     5 | Session      | Interhost communication, managing sessions between programs                               | X255, SCP       | Data      | Host       |
-|     4 | Transport    | End-to-end connections, reliability and flow control                                      | TCP             | Segment   | Host       |
-|     3 | Network      | Path determination and logical addressing                                                 | IP              | Packet    | Media      |
-|     2 | Data Link    | Physical addressing                                                                       | ARP, PPP        | Frame     | Media      |
-|     1 | Physical     | The physical infrastructure used to send and receive signals                              | USB, Bluetooth  | Bit       | Media      |
-+-------+--------------+-------------------------------------------------------------------------------------------+-----------------+-----------+------------+
-'''
+
+| Layer | Name | Description |Technologies|Data Unit|Layer Type|  
+|-------|-------|-------|-------|-------|-------|  
+| 7 | Application | Network process to computer programs| FTP, HTTP, SMTP | Data | Host |  
+| 6 | Presentation | Data representation, security encryption, convert computer code to network formatted code | AFP, MIME | Data| Host  |  
+| 5 | Session | Interhost communication, managing sessions between programs | X255, SCP | Data | Host |  
+| 4 | Transport | End-to-end connections, reliability and flow control| TCP | Segment | Host |  
+| 3 | Network | Path determination and logical addressing | IP | Packet | Media |  
+| 2 | Data Link | Physical addressing | ARP, PPP | Frame | Media |  
+| 1 | Physical | The physical infrastructure used to send and receive signals | USB, Bluetooth  | Bit | Media |  
+
 Layer 7: Application layer
 The application layer provides an interface for the end user operating a device connected to a network. This layer is what the user sees, in terms of loading an application (such as Web browser or e-mail); that is, this application layer is the data the user views while using these applications. Examples of application layer functionality include:
 *Support for file transfers
