@@ -61,3 +61,12 @@ code {
   font-family: 'Inconsolata', sans-serif;
   background: #D5D5D5;
 }
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #333;
+  padding: 0.5rem;
+  text-align: left;
+}
