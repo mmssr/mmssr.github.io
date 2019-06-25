@@ -1,0 +1,8 @@
+---
+layout: default
+title: About
+---
+<div class="blurb">
+<h1>About</h1>
+<p>The purpose of this site will be to host a general repo of cheetsheets I use, practice writeups on HTB and other CTFs, and whatever else pops into mind. Creating this site, I used the [github student pack](https://education.github.com/pack) where I recieved a URL from namecheap (thanks!), a [guide from Jonathan McGlone](http://jmcglone.com/guides/github-pages/), colors generated from [coolors.co](https://coolors.co/), and various other info I am forgetting to mention. My color scheme is currently using ```#333333```, ```#D5D5D5```, ```#FBFBFB```, ```#CE7B91```, and ```#40798C```, but that may change. Thanks for reading, and feel free to send any suggestions to <marc@mssr.me>.</p> 
+</div><!-- /.blurb -->
