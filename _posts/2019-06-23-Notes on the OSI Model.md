@@ -27,21 +27,34 @@ The application layer provides an interface for the end user operating a device 
 
 <h2>Layer 6: Presentation layer</h2>
 The presentation layer takes the information that the application layer of one system sends out and ensures that it is readable by the application layer of another system. For example, when a PC program communicates with another computer, one might be using extended binary coded decimal interchange code (EBCDIC) while the other uses ASCII to represent the same characters. If necessary, the presentation layer might be able to translate between multiple data formats by using a common format. Essentially, it translates information between the application and session layers.  
+* Multipurpose internet mail extensions (MIME)    
+* External data representation (XDR)  
 
 <h2>Layer 5: Session layer</h2>
 This layer establishes request/response communication. When needed a session is started with authentication, after which a request is sent. After a response the session might be ended or a new request is sent. This is the first layer where a client/server concept is introduced. Where a specific device might change the role from client to server or vice versa. Essentially, the session layer responds to service requests from the presentation layer and issues service requests to the transport layer.  
+* SOCKS  
+* Session announcement protocol (SAP) 
+* Network basic input/output system (NETBIOS)  
 
 <h2>Layer 4: Transport layer</h2>
-The Transport Layer is the level at which system reliability and quality are ensured. This layer manages traffic flow through the network layer to reduce congestion on a network, and performs error checking ensuring quality of service by resending data when data has been corrupted (think of TCP/IP). Some of the most popular methods of encryption and firewall security take place on this layer. The protocols of this layer provide host-to-host communication services for applications.   
+The Transport Layer is the level at which system reliability and quality are ensured. This layer manages traffic flow through the network layer to reduce congestion on a network, and performs error checking ensuring quality of service by resending data when data has been corrupted (think of TCP/IP). Some of the most popular methods of encryption and firewall security take place on this layer. The protocols of this layer provide host-to-host communication services for applications.  
+* Transmission control protocol (TCP)  
+* User datagram protocol (UDP)  
 
 <h2>Layer 3: Network layer</h2>
 The Network layer provides the means of transferring variable-length network packets from a source to a destination host via one or more networks. Within the service layering semantics of the OSI network architecture, the network layer responds to service requests from the transport layer and issues service requests to the data link layer. The Network (or routing) Layer works to coordinate related parts of a data conversation to ensure that large files are transferred. In other words, while the data link layer deals with the method in which the physical layer is used to transfer data, the network layer deals with organizing that data for transfer and reassembly. This layer also handles aspects of Routing Protocols, finding the available [best] path(s) from one network to another to ensure delivery of the data.  
+* Internet protocol (IPv4, IPv6)    
 
 <h2>Layer 2: Data link layer</h2>
 This layer is the protocol layer that transfers data between adjacent network nodes in a wide area network (WAN) or between nodes on the same local area network (LAN) segment. The Data link layer is mainly the method in which information from the network is broken down into frames and transmitted over the physical layer. This layer is also responsible for some Error detection and correction and some addressing so different devices can tell each other apart in larger systems. Examples of data link protocols are Ethernet for local area networks (multi-node), the Point-to-Point Protocol (PPP), HDLC and ADCCP for point-to-point (dual-node) connections. In the Internet Protocol Suite (TCP/IP), the data link layer functionality is contained within the link layer, the lowest layer of the descriptive model, which also includes the functionality encompassed in the OSI model's physical layer.  
+* Ethernet protocol (IEEE 802.3)  
+* Point-to-point (PPP)  
 
 <h2>Layer 1: Physical layer</h2>
 The physical layer translates logical communications requests from the data link layer into hardware-specific operations to cause transmission or reception of electronic signals. The physical layer refers to electrical and physical aspects of devices. It specifies how a device sends and receives information, such as using copper wires or fiber-optic cables. Examples of this include Ethernet or fiber optic cables, phone cords used for dial-up or DSL services, the coaxial cable used to provide broadband internet, the wires used to connect various components of a computer or even the radio signals used in wireless communication. Other functions of the physical layer include the conversion of signals into something that another layer can use (referred to as a bit) and adjusting the signal to allow for multiple users to use the same connections. Within the semantics of the OSI model, the physical layer translates logical communications requests from the data link layer into hardware-specific operations to cause transmission or reception of electronic signals.  
+* Ethernet protocol (IEEE 802.3)  
+* Universal serial bus (USB)  
+* Bluetooth  
 
 <h3>Sources and further reading:</h3>
 [Wikipedia - OSI Model](https://en.wikipedia.org/wiki/OSI_model#Protocol_layers_(Brief))  
