@@ -18,12 +18,12 @@ The Open Systems Interconnection (OSI) model is a method used to describe comput
 
 <h2>Layer 7: Application layer</h2>
 The application layer provides an interface for the end user operating a device connected to a network. It is not in itself an application but represents the component within the application which controls communication with other devices. This masks the rest of the application from the data transmission, relying upon all the layers below to complete this process. The data is at this stage presented in a way the user can understand.  
-*Remote login to hosts: Telnet  
-*File transfer: File Transfer Protocol (FTP), Trivial File Transfer Protocol (TFTP)  
-*Electronic mail transport: Simple Mail Transfer Protocol (SMTP)  
-*Networking support: Domain Name System (DNS)  
-*Host initialization: BOOTP  
-*Remote host management: Simple Network Management Protocol (SNMP), Common Management Information Protocol over TCP (CMOT)  
+* Remote login to hosts: Telnet  
+* File transfer: File Transfer Protocol (FTP), Trivial File Transfer Protocol (TFTP)  
+* Electronic mail transport: Simple Mail Transfer Protocol (SMTP)  
+* Networking support: Domain Name System (DNS)  
+* Host initialization: BOOTP  
+* Remote host management: Simple Network Management Protocol (SNMP), Common Management Information Protocol over TCP (CMOT)  
 
 <h2>Layer 6: Presentation layer</h2>
 The presentation layer takes the information that the application layer of one system sends out and ensures that it is readable by the application layer of another system. For example, when a PC program communicates with another computer, one might be using extended binary coded decimal interchange code (EBCDIC) while the other uses ASCII to represent the same characters. If necessary, the presentation layer might be able to translate between multiple data formats by using a common format. Essentially, it translates information between the application and session layers.  
