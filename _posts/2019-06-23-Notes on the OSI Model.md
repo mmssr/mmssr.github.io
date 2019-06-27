@@ -62,5 +62,6 @@ The physical layer translates logical communications requests from the data link
 [Wikipedia - OSI Model](https://en.wikipedia.org/wiki/OSI_model#Protocol_layers_(Brief))  
 [CWNP - Why Does the OSI Reference Model Matter?](https://www.cwnp.com/cwnp-wifi-blog/whytheosimodelmatters/)  
 [Cisco - OSI Model Reference Chart](https://learningnetwork.cisco.com/docs/DOC-30382)  
+[The TCP/IP Guid - OSI Reference Model](http://www.tcpipguide.com/free/t_OSIReferenceModelLayers.htm)  
 
 Powered by [Jekyll](http://jekyllrb.com)
