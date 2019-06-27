@@ -76,16 +76,7 @@ td {
   line-height: 1.4em;
   color: #333;    
 }
-th[scope="row"] {
-  background: #D5D5D5;
-  color: #CE7B91;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: 700;
-  text-align: left;
-  font-size: 1.5em;
-  line-height: 1.4em;
-}
-th[scope="col"] {
+th {
   background: #D5D5D5;
   color: #CE7B91;
   font-family: 'PT Sans Narrow', sans-serif;
