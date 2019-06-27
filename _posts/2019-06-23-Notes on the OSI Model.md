@@ -24,7 +24,7 @@ The application layer provides an interface for the end user operating a device 
 * Networking support: Domain Name System (DNS)  
 * Host initialization: BOOTP  
 * Remote host management: Simple Network Management Protocol (SNMP), Common Management Information Protocol over TCP (CMOT)  
----  
+___    
 <h2>Layer 6: Presentation layer</h2>
 The presentation layer takes the information that the application layer of one system sends out and ensures that it is readable by the application layer of another system. This is often needed for services such as translation between different types of machines, data compression, and encryption (though not all encrption is handled at the presentation layer). If necessary, the presentation layer might be able to translate between multiple data formats by using a common format.  
 * Multipurpose internet mail extensions (MIME)    
