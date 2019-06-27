@@ -90,5 +90,6 @@ ul, ol {
   color: #333;
 }
 hr {
+  border: 0;  
   border-top: 1px dotted #40798C;
 }
