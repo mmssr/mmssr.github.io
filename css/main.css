@@ -66,9 +66,21 @@ table {
 }
 
 td, th {
-  border: 1px solid #333;
+  border: 1px solid #40798C;
   padding: 0.5rem;
   text-align: left;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  color: #333;
+}
+th[scope="row"] {
+    background: #D5D5D5;
+    color: #CE7B91;
+}
+th[scope="column"] {
+    background: #D5D5D5;
+    color: #CE7B91;
 }
 ul, ol {
     font-size: 1.5em;
