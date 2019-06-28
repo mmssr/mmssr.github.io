@@ -8,7 +8,7 @@ The Open Systems Interconnection (OSI) model is a reference model used to descri
 
 | Layer | Name | Description |Technologies|Data Unit|Layer Type|  
 |-------|-------|-------|-------|-------|-------|  
-| 7 | Application | Network process to computer programs| FTP, HTTP, SMTP | Data | Host |  
+| 7 | Application | Interface displaying information recieved | FTP, HTTP, SMTP | Data | Host |  
 | 6 | Presentation | Data representation, security encryption, convert computer code to network formatted code | AFP, MIME | Data| Host  |  
 | 5 | Session | Interhost communication, managing sessions between programs | X255, SCP | Data | Host |  
 | 4 | Transport | End-to-end connections, reliability and flow control| TCP | Segment | Host |  
