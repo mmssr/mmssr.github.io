@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Notes on the OSI Model"
+title: "Network Mapping with the OSI Model"
 date: 2019-06-23
 ---
 
