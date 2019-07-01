@@ -1,9 +1,0 @@
----
-layout: post
-title: "Notes on TCP/IP"
-date: 2019-06-25
----
-
-Todo: Intro, describe network address vs ip vs broadcast address, show how to calculate /x to xxx.xxx.xxx.xxx, and how to calculate subnets based off of that info. Following that, remember to add the .md unlike last time...
-
-Powered by [Jekyll](http://jekyllrb.com)
