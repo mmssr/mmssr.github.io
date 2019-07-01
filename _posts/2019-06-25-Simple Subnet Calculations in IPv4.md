@@ -4,7 +4,7 @@ title: "Simple Subnet Calculations in IPv4"
 date: 2019-06-25
 ---
 
-Subnetting is the product of logically dividing up a network up into smaller, modular networks. This has many benefits, such as speed increases, easier administration, and increased options for maintaining security. While this post will not go into detail on the benefits or implementation of subnetworks, it is important to be able to calculate subnetwork ranges, network addresses, and broadcast addresses. In other words, "What is the network for for IP ~~~XXX.XXX.XXX.XXX/XX~~~? What is the IP range of this network?", and so on.
+Subnetting is the product of logically dividing up a network up into smaller, modular networks. This has many benefits, such as speed increases, easier administration, and increased options for maintaining security. While this post will not go into detail on the benefits or implementation of subnetworks, it is important to be able to calculate subnetwork ranges, network addresses, and broadcast addresses. In other words, "What is the network for for IP '''XXX.XXX.XXX.XXX/XX'''? What is the IP range of this network?", and so on.
 <hr>  
 Before calculating subnets, it is important to know a few terms:  
 * IP address: a unique address identifying a device on a network, combining a network address and host address. It is 32 bits, comprised of 4 binary octets.  
