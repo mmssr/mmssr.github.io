@@ -49,7 +49,8 @@ The rightmost bit corresponds to 8, which indicates our range. In other words, t
 <hr> 
 TODO:followed by how subnetting works using the "magic number" method. List sources.  
 <hr>
-<h2>Cheatsheet Chart</h2>
+<h2>Cheatsheet Chart</h2>  
+
 | Mask Bit Suffix | Subnet Mask | Host Addresses per Subnet |  
 |-----------------|-----------------|----------------|  
 | /1 | 128.0.0.0 | 2,147,483,646 |  
