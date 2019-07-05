@@ -83,7 +83,9 @@ TODO:followed by how subnetting works using the "magic number" method. List sour
 | /28 | 255.255.255.240 | 14 |  
 | /29 | 255.255.255.248 | 6 |  
 | /30 | 255.255.255.252 | 2 |  
-| /31 | 255.255.255.254 | 0 |  
-| /32 | 255.255.255.255 | 1 |  
+| /31 | 255.255.255.254 | x |  
+| /32 | 255.255.255.255 | x |
+
+Note that ```/31``` and ```/32``` are not frequently used, and would only be considered "valid" in hyper-specific circumstances outside the scope of this article.  
 
 Powered by [Jekyll](http://jekyllrb.com)
