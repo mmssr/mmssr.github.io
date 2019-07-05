@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Simple Subnet Calculations in IPv4"
-date: 2019-06-25
+date: 2019-07-05
 ---
 
 Subnetting is the product of logically dividing up a network up into smaller, modular networks. This has many benefits, such as speed increases, easier administration, and increased options for maintaining security. While this post will not go into detail on the benefits or implementation of subnetworks, it is important to be able to calculate subnetwork ranges, network addresses, and broadcast addresses. In other words, "What is the network for for IP ```XXX.XXX.XXX.XXX/XX```? What is the IP range of this network?", and so on.
@@ -45,10 +45,11 @@ This means that, for IP ```192.168.0.23/21```, our host ```0.23``` belongs to ne
   </tr>
 </table>  
 
-The rightmost bit corresponds to 8, which indicates our range. In other words, the subnet range that ```192.168.0.23/21``` belongs to is ```192.168.0.0``` through ```192.168.7.255```, and ```192.168.8.0``` is the adjascent subnet range. Now we also know our broadcast address, which is always the last IP address in the range (```192.168.7.255```). Since the first and last IP addresses are reserved for the network and broadcast addresses, the host address range (all valid addressible IPs) would be ```192.168.0.1``` through ```192.168.7.254```, giving a total of 2,046 valid host addresses (calculated as (8 x 256) - 2).  
-<hr> 
-TODO:followed by how subnetting works using the "magic number" method. List sources.  
-<hr>
+The rightmost bit corresponds to 8, which indicates our range. In other words, the subnet range that ```192.168.0.23/21``` belongs to is ```192.168.0.0``` through ```192.168.7.255```, and ```192.168.8.0``` is the adjascent subnet. Now we also know our broadcast address, which is always the last IP address in the range (```192.168.7.255```). Since the first and last IP addresses are reserved for the network and broadcast addresses, the host address range (all valid addressible IPs) would be ```192.168.0.1``` through ```192.168.7.254```, giving a total of 2,046 valid host addresses (calculated as (8 x 256) - 2). We can calculate the amount of valid host addresses as rightmost bit value, 8, multiplied by 256 per octet to the right, subtracting 2 lastly.  
+<hr>  
+<h2>Simple Calculations with the Magic Number Method</h2>  
+Now that we have examined the binary method, let's take a look at a simpler way of calculating the same subnet properties. Assuming we have our subnet mask, perhaps using a lookup chart such as the cheatsheet at the bottom, we instead want to find our leftmost number that isn't 255. Let's assume we are working with an IP of ```66.52.3.30``` and a subnet mask of ```255.255.255.240```. So, for ```255.255.255.240```, we have the number ```240```. To get our "magic number", we subtract 240 from 256, resulting in "16". Our magic number is calculated from the 4th binary octet, so we know are subnets calculate in intervals of 16 from the 4th octet. In other words, we know we would have network addresses of ```66.52.3.0```, followed by ```66.52.3.16```, followed by ```66.52.3.32```, and so on. Using this logic, we know that address ```66.52.3.30``` is within the network of ```66.52.3.16```, because the host range of the subnet extends from ```66.52.3.17``` through ```66.52.3.30```. We now also know that our broadcast address is ```66.52.3.31```, and that the next subnet range will begin at ```66.52.3.32```, giving a valid host range of 14. We can calculate the amount of valid host addresses as our magic number, 16, multiplied by 256 per octet to the right, subtracting 2 lastly.  
+<hr>  
 <h2>Cheatsheet Chart</h2>  
 
 | Mask Bit Suffix | Subnet Mask | Host Addresses per Subnet |  
@@ -86,6 +87,6 @@ TODO:followed by how subnetting works using the "magic number" method. List sour
 | /31 | 255.255.255.254 | x |  
 | /32 | 255.255.255.255 | x |
 
-Note that ```/31``` and ```/32``` are not frequently used, and would only be considered "valid" in hyper-specific circumstances outside the scope of this article.  
+Note that ```/31``` and ```/32``` are not frequently used, and would only be considered "valid" in hyper-specific circumstances which fall outside the scope of this article.  
 
 Powered by [Jekyll](http://jekyllrb.com)
