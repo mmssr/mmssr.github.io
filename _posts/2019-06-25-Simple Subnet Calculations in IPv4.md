@@ -18,7 +18,7 @@ Here we perform the AND operation:
 ```-----------------------------------```  
 ```11000000.10101000.00000000.00000000```  
   
-Resulting in a network address of ```192.168.0.0```. This means that, for ```IP 192.168.0.23```, our host ```0.23``` belongs to network ```192.168.0.0```. Now, lets look at the range of this network. We calculate this by once again looking at the bits assigned in our network mask octets, and keeping in mind the binary values of each. More specifically, we look at whichever our rightmost octet is which contains ```1``` values.  
+Resulting in a network address of ```192.168.0.0```. This means that, for IP ```192.168.0.23```, our host ```0.23``` belongs to network ```192.168.0.0```. Now, lets look at the range of this network. We calculate this by once again looking at the bits assigned in our network mask octets, and keeping in mind the binary values of each. More specifically, we look at whichever our rightmost octet is which contains ```1``` values.  
 
 <table>
   <tr>
