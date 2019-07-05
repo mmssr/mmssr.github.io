@@ -45,7 +45,7 @@ This means that, for IP ```192.168.0.23/21```, our host ```0.23``` belongs to ne
   </tr>
 </table>  
 
-The rightmost bit corresponds to 8, which indicates our range. In other words, the subnet range that ```192.168.0.23/21``` belongs to is ```192.168.0.0``` through ```192.168.7.255```, as ```192.168.8.0``` is the next subnet range. Now we also know our broadcast address, which is always the last IP address in the range (```192.168.7.255```). Since the first and last IP addresses are reserved for the network and broadcast addresses, the host address range (all valid addressible IPs) would be ```192.168.0.1``` through ```192.168.7.254```, giving a total of 2,046 valid hosts ((8 x 256) - 2).  
+The rightmost bit corresponds to 8, which indicates our range. In other words, the subnet range that ```192.168.0.23/21``` belongs to is ```192.168.0.0``` through ```192.168.7.255```, and ```192.168.8.0``` is the adjascent subnet range. Now we also know our broadcast address, which is always the last IP address in the range (```192.168.7.255```). Since the first and last IP addresses are reserved for the network and broadcast addresses, the host address range (all valid addressible IPs) would be ```192.168.0.1``` through ```192.168.7.254```, giving a total of 2,046 valid hosts ((8 x 256) - 2).  
 <hr>  
 TODO:followed by how subnetting works using the "magic number" method. List sources.
 
