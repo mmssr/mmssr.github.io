@@ -52,7 +52,7 @@ TODO:followed by how subnetting works using the "magic number" method. List sour
 <h2>Cheatsheet Chart</h2>  
 
 | Mask Bit Suffix | Subnet Mask | Host Addresses per Subnet |  
-|-----------------|-----------------|----------------|  
+|-----------------|-----------------|---------------:|  
 | /1 | 128.0.0.0 | 2,147,483,646 |  
 | /2 | 192.0.0.0 | 1,073,741,822 |  
 | /3 | 224.0.0.0 | 536,870,910 |  
