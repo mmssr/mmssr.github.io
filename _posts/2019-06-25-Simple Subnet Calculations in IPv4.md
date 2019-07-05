@@ -19,8 +19,30 @@ AND 11111111.11111111.11111000.00000000
     11000000.10101000.00000000.00000000  
 ```  
 Resulting in a network address of ```192.168.0.0```. This means that, for ```IP 192.168.0.23```, our host ```0.23``` belongs to network ```192.168.0.0```. Now, lets look at the range of this network. We calculate this by once again looking at the bits assigned in our network mask octets, and keeping in mind the binary values of each. More specifically, we look at whichever our rightmost octet is which contains ```1``` values.  
-| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
-| 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+<table>
+  <tr>
+    <th>Value:</th>
+    <td>128</td>
+    <td>64</td>
+    <td>32</td>
+    <td>16</td>
+    <td>8</td>
+    <td>4</td>
+    <td>2</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <th>Bits:</th>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+</table>  
 
 TODO: describe how subnetting works at a binary level, followed by how subnetting works using the "magic number" method. List sources.
 
