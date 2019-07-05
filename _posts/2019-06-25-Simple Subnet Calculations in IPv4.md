@@ -12,13 +12,14 @@ When running commands such as ```ipconfig``` or ```ifconfig``` you may be given 
 <h2>Simple Calculations with the Binary Method</h2>  
 Now that we have our subnet mask, lets calculate the network address, which is the very first IP in a subnet range. This is done with a bitwise AND operation, so the IP needs to be represented as binary as well, ```11000000.10101000.00000000.00010111```.  
 Here we perform the AND operation:  
-```
-    11000000.10101000.00000000.00010111  
-AND 11111111.11111111.11111000.00000000  
----------------------------------------  
-    11000000.10101000.00000000.00000000  
-```  
+
+```    11000000.10101000.00000000.00010111```  
+```AND 11111111.11111111.11111000.00000000```    
+```---------------------------------------```  
+```    11000000.10101000.00000000.00000000```  
+  
 Resulting in a network address of ```192.168.0.0```. This means that, for ```IP 192.168.0.23```, our host ```0.23``` belongs to network ```192.168.0.0```. Now, lets look at the range of this network. We calculate this by once again looking at the bits assigned in our network mask octets, and keeping in mind the binary values of each. More specifically, we look at whichever our rightmost octet is which contains ```1``` values.  
+
 <table>
   <tr>
     <th>Value:</th>
