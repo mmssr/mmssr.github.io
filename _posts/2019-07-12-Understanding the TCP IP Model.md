@@ -13,6 +13,7 @@ The TCP/IP suite is a collection of protocols which define how most networking i
 | 3 | Internet | Provides the network addressing and routing over a network | IPv4, IPv6, ICPM | Packet | 3 |  
 | 2 | Network Interface | Provides whatever network inferface the IP will work over | MAC, IEEE 802.3, PPP  | Frame | 2 |  
 | 1 | Physical* | Hardware which provides for physical transmission | USB, Bluetooth  | Bit | 1 |  
+
 *In the 4 layer model, the physical layer is assumed to be a part of the network interface layer. 
 
 TODO: describe each layer, and the journey of a request. 
