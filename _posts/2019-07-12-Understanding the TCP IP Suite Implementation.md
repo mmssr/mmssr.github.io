@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Understanding the TCP/IP Model"
+title: "Understanding the TCP/IP Suite Implementation"
 date: 2019-07-12
 ---
 
-The TCP/IP suite is a collection of protocols which define how most networking is accomplished, with the most common example being the internet. Much like OSI, TCP/IP has its own reference model with which we can describe the layers of communication functions comprising the TCP/IP suite. The model works in much the same way, with each layer representing its own abstraction which interfaces in some form with the layers adjacent to itself. Outgoing data is progressively encapsulated with additional headers at each level of the layer so that the data can be delivered, and incoming data is progressively decapsulated to deliver the data to the destination network application. One difference is that TCP/IP is frequently described as either a 4 layer model or as a 5 layer model. This explanation will explore the latter.  
+The TCP/IP suite is a collection of protocols which define how most networking is accomplished, with the most common example being the internet. Much like OSI, TCP/IP has its own model with which we can describe the layers of communication functions comprising the TCP/IP suite. The model works in much the same way, with each layer representing its own abstraction which interfaces in some form with the layers adjacent to itself. Outgoing data is progressively encapsulated with additional headers at each level of the layer so that the data can be delivered, and incoming data is progressively decapsulated to deliver the data to the destination network application. One difference is that TCP/IP is frequently described as either a 4 layer model or as a 5 layer model. This explanation will explore the latter.  
 
 | Layer | Name | Description | Technologies | Data Unit | OSI Equivilent |  
 |-------|-------|-------|-------|-------|-------|  
