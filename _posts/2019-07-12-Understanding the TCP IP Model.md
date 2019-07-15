@@ -4,17 +4,23 @@ title: "Understanding the TCP/IP Model"
 date: 2019-07-12
 ---
 
-The TCP/IP suite is a collection of protocols which define how most networking is accomplished, with the most common example being the internet. Much like OSI, TCP/IP has its own reference model with which we can describe the layers of communication functions which comprise the TCP/IP suite. The model works in much the same way, with each layer representing its own abstraction which interfaces in some form with the layers adjacent to itself; a layer serves the layer above it and is served by the layer below it. One difference, however, is that TCP/IP is frequently described as both a 4 layer model and as a 5 layer model. This explanation will explore the latter.  
+The TCP/IP suite is a collection of protocols which define how most networking is accomplished, with the most common example being the internet. Much like OSI, TCP/IP has its own reference model with which we can describe the layers of communication functions which comprise the TCP/IP suite. The model works in much the same way, with each layer representing its own abstraction which interfaces in some form with the layers adjacent to itself; outgoing data is progressively encapsulated with additional headers at each level of the layer so that the data can be delivered, and incoming data is progressively decapsulated to deliver the data to the destination network application. One difference, however, is that TCP/IP is frequently described as both a 4 layer model and as a 5 layer model. This explanation will explore the latter.  
 
 | Layer | Name | Description | Technologies | Data Unit | OSI Equivilent |  
 |-------|-------|-------|-------|-------|-------|  
-| 5 | Application | Provides application services to users and programs | HTTP, SIP, IMAP | Data | 5, 6, 7 |  
-| 4 | Host-to-Host Transport | Provides the data stream carried between the network to and the application | TCP, UDP | Segment | 4  |  
-| 3 | Internet | Provides the network addressing and routing over a network | IPv4, IPv6, ICPM | Packet | 3 |  
-| 2 | Network Interface | Provides whatever network inferface the IP will work over | MAC, IEEE 802.3, PPP  | Frame | 2 |  
-| 1 | Physical* | Hardware which provides for physical transmission | USB, Bluetooth  | Bit | 1 |  
+| 5 | Application | Provides application services to users and programs | HTTP, SIP, IMAP, FTP, DNS, etc | Data | 5, 6, 7 |  
+| 4 | Transport | Provides the data stream carried between the network to and the application | TCP, UDP | Segment | 4  |  
+| 3 | Internet | Provides the network addressing and routing over a network | IPv4, IPv6, ICMP, ND, etc | Packet | 3 |  
+| 2 | Network | Provides whatever network inferface the IP will work over | SLIP, PPP | Frame | 2 |  
+| 1 | Physical* | Hardware which provides for physical transmission | Hardware Drivers  | Bit | 1 |  
 
-*In the 4 layer model, the physical layer is assumed to be a part of the network interface layer. 
+*In the 4 layer model, the physical layer is assumed to be a part of the network interface layer.  
+
+<h2>Application Layer</h2>  
+Let's say you a message being sent via TCP/IP. This journey would begin at the application layer, with something like such as an HTTP or DNS request. The message itself will be formatted in a manner in which it can be sent with either TCP or UDP.  
+
+<h2>Transport Layer</h2>  
+The transport layer receives this data from the application layer, and will specify a port (memory location) for the sending and receiving of data as well as formatting the data either into a TCP segment, or a UDP datagram. TCP and UDP, in simple terms, can be explained as the difference between a connected or connectionless communication. With TCP, error checking will occur so that packets cannot be dropped or received out of order. This requires a connection as error handling requires responses from the recipient. With UDP, there is no guarantee of message deliver, and it does not require a connection. If a TCP segment is specified, the TCP SYN-ACK three way handshake will occur, and any errors will be handled by the protocol itself. On the other hand, if a UDP datagram is specified, the data will simply be sent, and the application layer will handle an error if needed (for example, a dropped DNS request will simply result in an error inside your web browser.)  
 
 TODO: describe each layer, and the journey of a request. 
 
