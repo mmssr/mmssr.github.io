@@ -8,10 +8,10 @@ The TCP/IP suite is a collection of protocols which define how most networking i
 
 | Layer | Name | Description | Technologies | Data Unit | OSI Equivilent |  
 |-------|-------|-------|-------|-------|-------|  
-| 5 | Application | Provides application services to users and programs | HTTP, SIP, IMAP, FTP, DNS, etc | Data | 5, 6, 7 |  
+| 5 | Application | Provides application services to users and programs | HTTP, DNS, NFS, FTP, IRC, etc | Data | 5, 6, 7 |  
 | 4 | Transport | Provides the data stream carried between the network to and the application | TCP, UDP | Segment | 4  |  
 | 3 | Internet | Provides the network addressing and routing over a network | IPv4, IPv6, ICMP, ND, etc | Packet | 3 |  
-| 2 | Network | Provides whatever network inferface the IP will work over | SLIP, PPP | Frame | 2 |  
+| 2 | Network | Provides whatever network inferface the IP will work over | SLIP, PPP, MAC | Frame | 2 |  
 | 1 | Physical* | Hardware which provides for physical transmission | Hardware Drivers  | Bit | 1 |  
 
 *In the 4 layer model, the physical layer is assumed to be a part of the network interface layer.  
@@ -20,8 +20,15 @@ The TCP/IP suite is a collection of protocols which define how most networking i
 Let's say you a message being sent via TCP/IP. This journey would begin at the application layer, with something like such as an HTTP or DNS request. The message itself will be formatted in a manner in which it can be sent with either TCP or UDP.  
 
 <h2>Transport Layer</h2>  
-The transport layer receives this data from the application layer, and will specify a port (memory location) for the sending and receiving of data as well as formatting the data either into a TCP segment, or a UDP datagram. TCP and UDP, in simple terms, can be explained as the difference between a connected or connectionless communication. With TCP, error checking will occur so that packets cannot be dropped or received out of order. This requires a connection as error handling requires responses from the recipient. With UDP, there is no guarantee of message deliver, and it does not require a connection. If a TCP segment is specified, the TCP SYN-ACK three way handshake will occur, and any errors will be handled by the protocol itself. On the other hand, if a UDP datagram is specified, the data will simply be sent, and the application layer will handle an error if needed (for example, a dropped DNS request will simply result in an error inside your web browser.)  
+The transport layer receives this data from the application layer, and will specify a port (memory location) for the sending and receiving of data as well as formatting the data either into a TCP segment, or a UDP datagram. In TCP/IP, the two main transport layer protocols are TCP and UDP. In simple terms, TCP establishes a connection whereas UDP is connectionless. With TCP, error checking will occur so that packets cannot be dropped or received out of order. This requires a connection, as error handling requires responses from the recipient. With UDP, there is no guarantee of message delivery, and it does not require a connection. If a TCP segment is specified, the TCP SYN-ACK three way handshake will occur, and any errors will be handled by the protocol itself. On the other hand, if a UDP datagram is specified, the data will simply be sent, and the application layer will handle an error if needed (for example, a dropped DNS request will simply result in an error inside your web browser.)  
 
-TODO: describe each layer, and the journey of a request. 
+<h2>Internet Layer</h2>  
+Once the transport layer has created either a TCP segment or a UDP datagram, the internet protocol will format the segment or datagram into an IP datagram by attaching its own header. This includes the sequence order, the IP address of both machines, and the length of the datagram.  
+
+<h2>Network (or Data Link) Layer</h2>  
+The network layer takes the IP datagram sent from the internet layer and formats the datagram into frames, adding hardware addressing. Following this, the physical layer handles the actual transmission of the bits.
+
+<h2>Physical Layer</h2>  
+Technically, the scope of the TCP/IP protocols does not extend to the physical layer, but once the other protocols have progressively added their headers to the message being sent, the physical layer will handle the physical transmission. Keep in mind, many descriptions of the TCP/IP model refer to the physical layer as being a part of the network layer.  
 
 Powered by [Jekyll](http://jekyllrb.com)
