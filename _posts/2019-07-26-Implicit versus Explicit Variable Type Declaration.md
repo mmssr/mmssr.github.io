@@ -22,6 +22,7 @@ In the third example, ```var z;```, we are only declaring the value, and not ass
 Now, why should we attempt to use one versus the other? The most typical reason is clarity. Imagine you are writing a videogame, and you have your character's inventory handled by a list. In order to have such a list, you would have to declare it. You could do that as:  
 ```  
 List <items> lstInventory = GetCharacterInfo(); //data type explicitly declared  
+  OR  
 List lstInventory = GetCharacterInfo(); //data type implicitly declared
 ```  
 GetCharacterInfo() is a function of some sort, and due to the vague name we do not know exactly what it is returning. If we explicitly declare the list as "hey this is specifically a list of items," the list is much more readable vs simply declaring the list. When you are working through a code base, it is much easier to have that sort of information handy, as the code base may be enormous and the clearer a code is written, the easier it will be for you and others to maintain. That being said, there are of course reasons to use implicitly defined variable types, and whatever provides the most clarity is probably the way to go.  
