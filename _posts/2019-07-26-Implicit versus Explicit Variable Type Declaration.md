@@ -6,10 +6,13 @@ date: 2019-07-26
 
 For those who are new to programming, implicit and explicit variable declarations can be a bit confusing. In reality, it's much simpler than we give it credit, and people tend to overthink it. Firstly, let's define a variable declaration. A variable declaration is the point in a program at which we define a variable, often times we also assign a value as well, which can look something like this: ```declaration of variable = value assigned```. It is important to remember that there is a difference between the declaration and assignment, because in order to tell if a variable is declared explicitly versus implictly, we need to pay attention to the declaration. An explicitly declared variable will specify the variable type within the declaration. An implicitly declared variable will assign a type based upon the value assigned to it. Here are some examples:   
 ```  
-int x; //here we are declaring a integer variable named x. This is an explicit type declaration, the type is not dependent on the value.  
-float pi = 3.14; //here we are declaring a float variable named pi, and also assigning it the value 3.14. This is an explicit type declaration as well; though we did assign a value, the type was assigned by the declaration and not the value.  
-var z; //here we are declaring a variable named z, and allowing the variable type to be defined by a future assignment. This is an implicit variable declaration as the variable type is dependent on whatever value is assigned.
+int x; //here we are declaring a integer variable named x.  
+float pi = 3.14; //here we are declaring a float variable named pi, and also assigning it the value 3.14. This is an explicit type declaration.  
+var z; //here we are declaring a variable named z, and allowing the variable type to be defined by a future assignment. This is an implicit variable declaration.
 ```  
+Lets look at our first example, ```int x;```. This is an explicit type declaration, the type is not dependent on the value. We have explicitly stated that whatever value is given to this variable will be an integer.  
+In the second example, ```float pi = 3.14;``` we both assigned a value and declared a type. The type was explicitly declared before we assigned a value, and even if we passed it the value "5" it would be stored as a float, because we explicitly declared the variable type to be so.  
+In the third example, ```var z;``` we are only declaring the value, and not assigning it a type. Var, however, allows the variable type to be set by the value we pass it. This is therefore an implicit variable declaration, because by looking at the declaration we have no idea what data type the variable will be.  
 Now, why should we attempt to use one versus the other? The most typical reason is clarity. Imagine you are writing a videogame, and you have your character's inventory handled by a list. In order to have such a list, you would have to declare it. You could do that as:  
 ```  
 List <items> lstInventory = GetCharacterInfo(); //data type explicitly declared  
