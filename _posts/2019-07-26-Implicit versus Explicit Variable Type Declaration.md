@@ -16,7 +16,7 @@ Let's look at our first example, ```int x;```. This is an explicit type declarat
 
 In the second example, ```float pi = 3.14;```, we both assigned a value, 3.14, and declared a type, float. The type was explicitly declared before we assigned a value, and even if we passed it the value "5" it would be stored as a float, because we explicitly declared the variable type to be so.  
 
-In the third example, ```var z;```, we are only declaring the value, and not assigning it a type. Var, however, allows the variable type to be set by the value we pass it. This is therefore an implicit variable declaration, because by looking at the declaration we have no idea what data type the variable will be.  
+In the third example, ```var z;```, we are only declaring the variable, and not assigning it a type or value. Var, however, allows the variable type to be set by the value we pass it. This is therefore an implicit variable declaration, because by looking at the declaration we have no idea what data type the variable will be.  
 <hr>
 <h2>Which is generally preferred?</h2>
 Now, why should we attempt to use one versus the other? The most typical reason is clarity. Imagine you are writing a videogame, and you have your character's inventory handled by a list. In order to have such a list, you would have to declare it. You could do that as:  
