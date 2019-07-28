@@ -9,8 +9,8 @@ For those who are new to programming, implicit and explicit variable declaration
 <h2>Examples</h2>
 ```  
 int x; //here we are declaring a integer variable named x.  
-float pi = 3.14; //here we are declaring a float variable named pi, and also assigning it the value 3.14. This is an explicit type declaration.  
-var z; //here we are declaring a variable named z, and allowing the variable type to be defined by a future assignment. This is an implicit variable declaration.
+float pi = 3.14; //here we are declaring a float variable named pi, and also assigning it the value 3.14.  
+var z; //here we are declaring a variable named z, and allowing the variable type to be defined by a future assignment.  
 ```  
 Let's look at our first example, ```int x;```. This is an explicit type declaration, the type is not dependent on the value. We have explicitly stated that this variable will only hold an integer.  
 
