@@ -54,14 +54,15 @@ ul.posts li {
 html {
   font-family: 'PT Sans', sans-serif;
 }
+/* removed for prism.js
 pre, code {
   font-family: 'Inconsolata', sans-serif;
   background: #D5D5D5;
 }
+*/
 table {
   border-collapse: collapse;
 }
-
 td, th {
   border: 1px solid #40798C;
   padding: 0.5rem;
