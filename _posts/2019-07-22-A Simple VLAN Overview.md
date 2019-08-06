@@ -32,6 +32,7 @@ With a configuration like this, the devices on VLAN 1 could communicate with one
 | 6    | 2    | PC       |  
 | 7    | 2    | PC       |  
 | 8    | 2    | Switch 1 |  
+
 <hr>  
 <h2>Tagged VLAN</h2>
 The second method is known as a tagged VLAN. This is accomplished by adding a VLAN tag to the ethernet frame immediately after the MAC address. With frame based communication, less cables can be used than the previous method if each switch is capable of tagged VLANs, as only a single cable must connect the switches versus one per VLAN with a port-based VLAN. This method is more likely to be used if a VLAN member needs to be able to communicate on multiple networks.  
