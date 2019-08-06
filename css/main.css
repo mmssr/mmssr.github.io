@@ -71,12 +71,13 @@ pre, code {
   font-family: 'Inconsolata', sans-serif;
   background: #D5D5D5;
   border-radius: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 table {
   border-collapse: collapse;
+  border-radius: 5px;
 }
 
 td, th {
