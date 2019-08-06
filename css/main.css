@@ -82,6 +82,8 @@ table {
 td, th {
   border: 1px solid #40798C;
   border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
   padding: 0.5rem;
 }
 
