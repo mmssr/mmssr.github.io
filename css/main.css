@@ -77,11 +77,11 @@ pre, code {
 
 table {
   border-collapse: collapse;
-  border-radius: 5px;
 }
 
 td, th {
   border: 1px solid #40798C;
+  border-radius: 5px;
   padding: 0.5rem;
 }
 
