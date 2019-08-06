@@ -44,25 +44,20 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
-
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
-
 ul.posts li {
     list-style: none;
 }
 html {
   font-family: 'PT Sans', sans-serif;
 }
-/*
-pre,
-code {
+pre, code {
   font-family: 'Inconsolata', sans-serif;
   background: #D5D5D5;
 }
-*/
 table {
   border-collapse: collapse;
 }
