@@ -8,10 +8,12 @@ For those who are new to programming, implicit and explicit variable declaration
 <hr>
 <h2>Examples</h2>
 ```  
+
 int x; //here we are declaring a integer variable named x.  
 float pi = 3.14; //here we are declaring a float variable named pi, and also assigning it the value 3.14.  
 var z; //here we are declaring a variable named z, and allowing the variable type to be defined by a future assignment.  
 price = 10; //here we are declaring a variable, and assigning it an integer value.  
+
 ```  
 Let's look at our first example, ```int x;```. This is an explicit type declaration, the type is not dependent on the value. We have explicitly stated that this variable will only hold an integer.  
 
@@ -24,9 +26,11 @@ In the fourth example, ```price = 10;``` we are declaring the variable, and assi
 <h2>Which is generally preferred?</h2>
 Now, why should we attempt to use one versus the other? The most typical reason is clarity. Imagine you are writing a videogame, and you have your character's inventory handled by a list. In order to have such a list, you would have to declare it. You could do that as:  
 ```  
+
 List <items> lstInventory = GetCharacterInfo(); //data type explicitly declared  
   OR  
 List lstInventory = GetCharacterInfo(); //data type implicitly declared
+
 ```  
 GetCharacterInfo() is a function of some sort, and due to the vague name we do not know exactly what it is returning. If we explicitly declare the list as "hey this is specifically a list of items," the list is much more readable vs simply declaring the list. When you are working through a code base, it is much easier to have that sort of information handy, as the code base may be enormous and the clearer a code is written, the easier it will be for you and others to maintain. That being said, there are of course reasons to use implicitly defined variable types, and whatever provides the most clarity is probably the way to go.  
 
