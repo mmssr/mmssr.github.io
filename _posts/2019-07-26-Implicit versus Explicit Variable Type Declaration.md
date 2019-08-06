@@ -11,12 +11,15 @@ For those who are new to programming, implicit and explicit variable declaration
 int x; //here we are declaring a integer variable named x.  
 float pi = 3.14; //here we are declaring a float variable named pi, and also assigning it the value 3.14.  
 var z; //here we are declaring a variable named z, and allowing the variable type to be defined by a future assignment.  
+price = 10; //here we are declaring a variable, and assigning it an integer value.  
 ```  
 Let's look at our first example, ```int x;```. This is an explicit type declaration, the type is not dependent on the value. We have explicitly stated that this variable will only hold an integer.  
 
 In the second example, ```float pi = 3.14;```, we both assigned a value, 3.14, and declared a type, float. The type was explicitly declared before we assigned a value, and even if we passed it the value "5" it would be stored as a float, because we explicitly declared the variable type to be so.  
 
 In the third example, ```var z;```, we are only declaring the variable, and not assigning it a type or value. Var, however, allows the variable type to be set by the value we pass it. This is therefore an implicit variable declaration, because by looking at the declaration we have no idea what data type the variable will be.  
+
+In the fourth example, ```price = 10;``` we are declaring the variable, and assigning it a value, 10. Though ```price``` sounds like it might be a value allowing decimals, we have assigned an integer value, and so the variable type is an integer. This is an implicit variable declaration, because the variable's data type is specifically defined by the value assigned to it, and not the variable itself.  
 <hr>
 <h2>Which is generally preferred?</h2>
 Now, why should we attempt to use one versus the other? The most typical reason is clarity. Imagine you are writing a videogame, and you have your character's inventory handled by a list. In order to have such a list, you would have to declare it. You could do that as:  
