@@ -13,10 +13,12 @@ When running commands such as ```ipconfig``` or ```ifconfig``` you may be given 
 Now that we have our subnet mask, lets calculate the network address, which is the very first IP in a subnet range. This is done with a bitwise AND operation, so the IP needs to be represented as binary as well, ```11000000.10101000.00000000.00010111```.  
 Here we perform the AND operation and find our network address:  
 ```  
+
 11000000.10101000.00000000.00010111 = 192.168.000.023 (Address)  
 11111111.11111111.11111000.00000000 = 255.255.248.000 (Mask)  
 -----------------------------------AND---------------  
 11000000.10101000.00000000.00000000 = 192.168.000.000 (Network Address)
+
 ```  
 This means that, for IP ```192.168.0.23/21```, our host ```0.23``` belongs to network ```192.168.0.0```. Now, lets look at the range of this network. We calculate this by once again looking at the bits assigned in our network mask octets, and keeping in mind the binary values of each. More specifically, we look at whichever our rightmost octet is which contains ```1``` values, and then the value of our rightmost bit.  
 
