@@ -56,11 +56,13 @@ ul.posts li {
 html {
   font-family: 'PT Sans', sans-serif;
 }
+/*
 pre,
 code {
   font-family: 'Inconsolata', sans-serif;
   background: #D5D5D5;
 }
+*/
 table {
   border-collapse: collapse;
 }
