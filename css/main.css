@@ -70,6 +70,8 @@ html {
 pre, code {
   font-family: 'Inconsolata', sans-serif;
   background: #D5D5D5;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 table {
