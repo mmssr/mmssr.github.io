@@ -11,9 +11,8 @@ title: SQLI.me
   		{% for post in site.posts limit:1 %}
   		<li>
 			<a href="{{ post.url }}">
-    			<h3>{{ post.title }}</h3>
-    			<p>{{ post.date | date: "%d %B %Y" }}</p>
-			<p><div>{{ post.content |truncatehtml | truncatewords: 30 }}</div></p>
+			<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+			<p>{{ post.content | truncatehtml | truncatewords: 30 }}</p>
     			</a>
   		</li>
   	{% endfor %}
