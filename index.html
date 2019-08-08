@@ -7,7 +7,7 @@ title: SQLI.me
 	<p>Hello world. This page is a collection of cheatsheets, oversimplified summaries, and misunderstandings.</p>
 	
 	<h2>Latest Post</h2>
-	<ul class="entries">
+	<ul>
   		{% for post in site.posts limit:1 %}
   		<li>
 			<a href="{{ post.url }}">
@@ -19,12 +19,11 @@ title: SQLI.me
   	{% endfor %}
 	</ul>
 	<h2>Recent Posts</h2>
-	<ul class="entries">
+	<ul>
   		{% for post in site.posts offset:1 limit:2 %}
   		<li>
     			<a href="{{ post.url }}">
-    			<h3>{{ post.title }}</h3>
-    			<p>{{ post.date | date: "%d %B %Y" }}</p>
+    			<p>{{ post.title }}</p>
     			</a>
   	</li>
   	{% endfor %}				
