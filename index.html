@@ -12,7 +12,7 @@ title: SQLI.me
   		<li>
 			<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 			<a href="{{ post.url }}">
-			<p>{{ post.content | truncatehtml | truncatewords: 30 }}</p>
+			<p>{{ post.excerpt }}</p>
     			</a>
   		</li>
   	{% endfor %}
