@@ -5,18 +5,19 @@ title: SQLI.me
 <div class="blurb">
 	<h1>SQLI.me!</h1>
 	<p>Hello world. This page is a collection of cheatsheets, oversimplified summaries, and misunderstandings.</p>
-	
+	<hr>
 	<h2>Latest Post</h2>
 	<ul class="posts">
   		{% for post in site.posts limit:1 %}
   		<li>
-			<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+			<span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 			<a href="{{ post.url }}">
-			<p>{{ post.excerpt }}</p>
+			<p>{{ post.content | strip_html | truncatewords:30 }}</p>
     			</a>
   		</li>
   	{% endfor %}
 	</ul>
+	<hr>
 	<h2>Recent Posts</h2>
 	<ul class="posts">
   		{% for post in site.posts offset:1 limit:2 %}
