@@ -10,22 +10,26 @@ title: SQLI.me
 	<ul class="entries">
   		{% for post in site.posts limit:1 %}
   		<li>
-    			<a href="{{ post.url }}">
+    			<p>
+			<a href="{{ post.url }}">
     			<h3>{{ post.title }}</h3>
     			<p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
     			<div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
-    		</a>
+    			</a>
+			</p>
   	</li>
   	{% endfor %}
 	<h2>Recent Posts</h2>
 	<ul class="entries">
   		{% for post in site.posts offset:1 limit:2 %}
   		<li>
+			<p>
     			<a href="{{ post.url }}">
     			<h3>{{ post.title }}</h3>
     			<p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
     			<div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
-    		</a>
+    			</a>
+			</p>
   	</li>
   	{% endfor %}				
 	</ul>
