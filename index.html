@@ -10,8 +10,8 @@ title: SQLI.me
 	<ul class="posts">
   		{% for post in site.posts limit:1 %}
   		<li>
-			<a href="{{ post.url }}">
 			<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+			<a href="{{ post.url }}">
 			<p>{{ post.content | truncatehtml | truncatewords: 30 }}</p>
     			</a>
   		</li>
