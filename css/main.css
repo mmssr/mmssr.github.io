@@ -21,6 +21,10 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+
+}
+
+nav {
     background: #D5D5D5; /* remove if it sucks */
     padding: 2em; /* remove if it sucks */
 }
