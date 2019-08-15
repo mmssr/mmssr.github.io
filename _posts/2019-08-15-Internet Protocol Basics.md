@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "IP Basics"
+title: "Internet Protocol Basics"
 date: 2019-08-15
 ---
 
