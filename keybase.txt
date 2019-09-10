@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/messer
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://sqli.me
+  * I am messer (https://keybase.io/messer) on keybase.
+  * I have a public key ASAcDEIQAtvNJr0mybOw36h0HiVbzUSmS9V_fvFr4VeL9wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01201c0c421002dbcd26bd26c9b3b0dfa8741e255bcd44a64bd57f7ef16be1578bf70a",
+      "host": "keybase.io",
+      "kid": "01201c0c421002dbcd26bd26c9b3b0dfa8741e255bcd44a64bd57f7ef16be1578bf70a",
+      "uid": "e505b36829062ff20e39cac24bcb4719",
+      "username": "messer"
+    },
+    "merkle_root": {
+      "ctime": 1568139739,
+      "hash": "d06aff4be07bd5d9532a6512400cb2df6992ddf06018328a65dc78abcb26d45472ba8bc0808259c26ae71fef9ff65aa71679ec0f7da7bde80f7b590f4e9a4567",
+      "hash_meta": "910a8189ce9d35e39ec746b0a25a59ed7da3dedefc3097120f9479e25270370d",
+      "seqno": 6488313
+    },
+    "service": {
+      "entropy": "Or7DYFZDqXQkg7nLrxTKkmpB",
+      "hostname": "sqli.me",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.4.0"
+  },
+  "ctime": 1568139747,
+  "expire_in": 504576000,
+  "prev": "7535d46be9da634041acbd2b5c313592510260ff9cf34165bf085745893d14a8",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgHAxCEALbzSa9JsmzsN+odB4lW81EpkvVf37xa+FXi/cKp3BheWxvYWTESpcCBsQgdTXUa+naY0BBrL0rXDE1klECYP+c80FlvwhXRYk9FKjEIITlsdLtwX/1BLFVB7bd6yZuN1AK4CCBVBFLBqenefc6AgHCo3NpZ8RANayXusJtvBHElaWxY7EVgT8ZlweYxP0K2XmQTCbhSTz+WBD1UCG6WV8jvqVKkkyO0PkKIprDr+ZbE1z1hpXrCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMfeD7V0fw01rFVXrg9J1i9rtLZE0RS72IgoM3YJ9umfo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/messer
+
+==================================================================
