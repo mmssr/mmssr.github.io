@@ -10,13 +10,13 @@ IP, or Internet Protocol, is the network layer protocol which handles internetwo
 Layer 5 [Data]  # Basic application data  
 Layer 4 [TCP/UDP header] + [Data]  # Application data is packaged with tcp/udp header  
 Layer 3 [IP header] + [TCP/UDP header + data]  # Result is packaged with IP header  
-Layer 2 [Frame header] + [IP, TCP/UDP header + data]  # Result is packaged with frame header  
+Layer 2 [Frame header] + [IP, TCP/UDP header + data]  # Result is packaged with frame header
 
 ```  
 
 <hr>
 <h2>Addressing</h2>  
-IP addresses are assigned at a network interface level. This is an important distinction as devices can technically have multiple IPs: one per network interface. For instance, say you have both a wired and wireless connection on a machine, such as a Wifi interface and an Ethernet interface. Each will have its own IP address. On a given internetwork, each IP address must be different. An IP address is configured in a handful of ways, either static or dynamic. With static IP addressing, an IP address will not change, but with dynamic addressing (such as DHCP) IP addresses may be changed by software without manual interference.  
+IP addresses are assigned at a network interface level. This is an important distinction as devices can technically have multiple IPs: one per network interface. For instance, say you have both a wired and wireless connection on a machine, such as a Wifi interface and an Ethernet interface. Each will have its own IP address. On a given internetwork, each IP address must be different. An IP address is configured and assigned in a handful of ways, either static or dynamic. With static IP addressing, an IP address will not change, but with dynamic addressing (such as DHCP) IP addresses may be changed by software without manual interference.  
 
 Addresses themselves are just an identifying binary number. Currently, these are usually 4 octet 32-bit numbers (IPv4), allowing for an addressing space of 2^32 different addresses. These are more commonly represented in decimal value. IPv6 is a 16 octet 128-bit number, allowing for a substantially larger addressing space of 2^128 addresses, and is commonly represented in hex value. Many of the addresses in these spaces are reserved however, and as address space began to dwindle for IPv4, IPv6 was developed.  
 
