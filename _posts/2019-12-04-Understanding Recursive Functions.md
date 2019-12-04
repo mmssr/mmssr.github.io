@@ -27,8 +27,8 @@ Notice how stringClean(), the function we defined, calls itself within itself. T
 ![Recursion Flow 2](/assets/recursion2 flow.PNG)  
 
 Here is another example, the famous fibonnaci problem: for int n, return the nth fibonnacci number with n=0 representing the sequence beginning.  
-
 ```
+
 public int fibonacci(int n) {
   if (n == 0) { // returns 0 because it cannot go any lower
     return 0;
