@@ -39,7 +39,7 @@ public int fibonacci(int n) {
 }
 
 ```  
-See how the final else breaks down the problem into multiples of the function? You can follow this program path as well:
+See how the final else breaks down the problem into multiples of the function? You can follow this program path as well:  
 ![Recursion Flow 1](/assets/recursion1 flow.png)  
 
 Powered by [Jekyll](http://jekyllrb.com)  
