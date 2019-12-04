@@ -4,7 +4,7 @@ title: "Understanding Recursive Functions"
 date: 2019-12-04
 ---
 
-Recursion within the context of computer science is when a function calls itelf. Typically, this is done to take a relatively complex problem which is solved via repeated steps, by applying the same logic against repeated iterations. Let's look at an example of a recursive function:  
+Recursion (within the context of computer science) is when a function calls itelf. Typically, this is done to take a relatively complex problem and break it down into smaller problems. Let's look at an example of a recursive function that takes a given string, such as yyzzza, and removes the adjacent duplicates:  
 ```
 
 /* this program will accept a string and remove duplicate adjacent values */
