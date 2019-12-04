@@ -24,7 +24,7 @@ public String stringClean(String str) {
 
 ```  
 Notice how stringClean(), the function we defined, calls itself within itself. This breaks up the problem into smaller and smaller problems, allowing us to solve the issue via the repeated steps. The simplest way to view this is with a flow chart:  
-![Recursion Flow 2](/assets/recursion2 flow.png)  
+![Recursion Flow 2](/assets/recursion2 flow.PNG)  
 
 Here is another example, the famous fibonnaci problem: for int n, return the nth fibonnacci number with n=0 representing the sequence beginning.  
 
@@ -40,7 +40,7 @@ public int fibonacci(int n) {
 
 ```  
 See how the final else breaks down the problem into multiples of the function? You can follow this program path as well:  
-![Recursion Flow 1](/assets/recursion1 flow.png)  
+![Recursion Flow 1](/assets/recursion1 flow.PNG)  
 
 Powered by [Jekyll](http://jekyllrb.com)  
 
