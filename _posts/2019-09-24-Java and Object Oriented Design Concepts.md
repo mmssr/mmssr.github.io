@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Java and Object Oriented Design Concepts"
-date: 2019-12-04
+date: 2019-09-24
 ---
 
 <h2>Installing Java</h2>  
