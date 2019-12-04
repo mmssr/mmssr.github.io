@@ -7,7 +7,7 @@ date: 2019-12-04
 Recursion within the context of computer science is when a function calls itelf. Typically, this is done to take a relatively complex problem which is solved via repeated steps, by applying the same logic against repeated iterations. Let's look at an example of a recursive function:  
 ```
 
-/* this program will accept a string and remove duplicate adjascent values */
+/* this program will accept a string and remove duplicate adjacent values */
 public String stringClean(String str) {
   /* return if there are less than 2 chars, no adjascent chars */
   if (str.length() < 2) {
