@@ -26,7 +26,7 @@ public String stringClean(String str) {
 Notice how stringClean(), the function we defined, calls itself within itself. This breaks up the problem into smaller and smaller problems, allowing us to solve the issue via the repeated steps. The simplest way to view this is with a flow chart:  
 ![Recursion Flow 2](/assets/recursion2 flow.PNG)  
 
-Here is another example, the famous fibonnaci problem: for int n, return the nth fibonnacci number with n=0 representing the sequence beginning.  
+Here is another example, the famous fibonaci problem: for int n, return the nth fibonacci number with n=0 representing the sequence beginning.  
 ```
 
 public int fibonacci(int n) {
