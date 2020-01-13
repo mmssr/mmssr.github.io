@@ -11,10 +11,6 @@ Let's recall that routing amidst networks occurs at layer 3, switching within a 
 
 After that, the type of protocol within the frame is specified so (2 bytes) so that the data can be properly parsed and interpreted. The payload data within would be your application, transport, and internet layer data encapsulated together. At the very end is a 4 byte Frame Check Sequence. The Frame Check Sequence is calculated before being sent, and is based upon the rest of the frame. Since it is a calculation based upon that data, when the frame arrives at its destination it can be recalculated by the recipient. If the FCS matches, then the packet can safely be assumed to have been sent correctly. If the FCS does not match, the frame can be assumed to have been corrupted in some fashion and frame can be dropped. 
 
-```
-
-[Preamble - 7 bytes][Start Frame Delim - 1 byte][Dest Mac - 6 bytes][Source Mac- 6 bytes][Type - 2 bytes][Payload- var][Frame Check Seq - 4 bytes]
-
-```  
+![eframe](/assets/eframe.PNG)  
 
 Powered by [Jekyll](http://jekyllrb.com)  
