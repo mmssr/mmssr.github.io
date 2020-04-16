@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Network Mapping with the OSI Model"
+title: "Network Service Mapping with the OSI Model"
 date: 2019-06-23
 ---
 
