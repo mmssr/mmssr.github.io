@@ -9,7 +9,7 @@ The TCP/IP suite is a collection of protocols which define how most networking i
 | Layer | Name | Description | Technologies | Data Unit | OSI Equivilent |  
 |-------|-------|-------|-------|-------|-------|  
 | 5 | Application | Provides application services to users and programs | HTTP, DNS, NFS, FTP, IRC, etc | Data | 5, 6, 7 |  
-| 4 | Transport | Provides the data stream carried between the network to and the application | TCP, UDP | Segment | 4  |  
+| 4 | Transport | Provides the data stream carried between the network to and from the application | TCP, UDP | Segment | 4  |  
 | 3 | Internet | Provides the network addressing and routing over a network | IPv4, IPv6, ICMP, ND, etc | Packet | 3 |  
 | 2 | Network | Provides whatever network inferface the IP will work over | SLIP, PPP, MAC | Frame | 2 |  
 | 1 | Physical* | Hardware which provides for physical transmission | Hardware Drivers  | Bit | 1 |  
