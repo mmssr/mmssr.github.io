@@ -34,14 +34,19 @@ a:hover {
 }
 
 h1,
-h2,
+h2 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  color: #CE7B91;
+}
+
 h3,
 h4,
 h5,
 h6 {
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 700;
-  color: #CE7B91;
+  color: #40798C;
 }
 
 p {
