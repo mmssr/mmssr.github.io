@@ -60,7 +60,7 @@ systemctl start apache2 - start apache webserver
 systemctl stop apach2 - stop apache webserver  
 <h3>/* backup */</h3>  
 service apache2 start - start apache webserver  
-service apache2 stop  
+service apache2 stop - stop apache webserver  
 systemctl enable [service] - enable service to begin at startup, (eg systemctl enable postgresql)  
 systemctl disable [service] - disable service to begin at startup, (eg systemctl disable postgresql)  
 systemctl list-units --type=service - lists all services  
