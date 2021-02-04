@@ -55,10 +55,10 @@ route - shows your routing table. essentially shows your local traffic exit for 
 
 
 <h2>/* Starting and stopping services - web host example*/</h2>  
-**/* ideal - systemctl gives greater control but not always available */**  
+**/* ideal - systemctl gives greater control but not always available */ **  
 systemctl start apache2 - start apache webserver  
 systemctl stop apach2 - stop apache webserver  
-**/* backup */**  
+**/* backup */ **  
 service apache2 start - start apache webserver  
 service apache2 stop  
 systemctl enable [service] - enable service to begin at startup, (eg systemctl enable postgresql)  
