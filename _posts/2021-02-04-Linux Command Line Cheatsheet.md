@@ -17,7 +17,7 @@ ls - list subdirectories (-la to include hidden)
 locate [keyword] - locate a file (eg locate bash)  
 updatedb - update filesystem database  
 man [command] - see options and instructions for command (eg man ls)  
-[command] --help - usually a simpler version of man  
+[command] -`-help - usually a simpler version of man  
 cat [filename] - print contents of a file to terminal  
 grep [pattern] - capture lines with pattern, (eg ping google.com -c 1 | grep "64 bytes")  
 cut - allows you to cut based upon delimiter (-d "[delim]) and sections (-f [which section]), (eg ping google.com -c 1 | grep "64 bytes" | cut -d " " -f 4)  
@@ -63,19 +63,19 @@ service apache2 start - start apache webserver
 service apache2 stop - stop apache webserver  
 systemctl enable [service] - enable service to begin at startup, (eg systemctl enable postgresql)  
 systemctl disable [service] - disable service to begin at startup, (eg systemctl disable postgresql)  
-systemctl list-units --type=service - lists all services  
+systemctl list-units -`-type=service - lists all services  
 ps -aux | grep [service name] - check for running service  
 journalctl -u [servicename].service --no-pager - view the logs associated with a service  
 
 
 <h2>/* Process kills */</h2>  
 kill -l - view all kill signals  
-kill [signal number] [process id] - kill process with specified signal  
-kill 1 [process id] - signal that process terminal has closed  
-kill 2 [process id] - signal to interrupt a process, or ctl+c in the controlling terminal session  
-kill 3 [process id] - signal sent when ctl+d is entered in terminal controlling session  
-kill 9 [process id] - signal sent to immediately kill process, no catch/ignore possible  
-kill 20 [process id] - signal sent to suspend a process, can be used later; also sent by ctl+z in controlling terminal session.  
+kill -[signal number] [process id] - kill process with specified signal  
+kill -1 [process id] - signal that process terminal has closed  
+kill -2 [process id] - signal to interrupt a process, or ctl+c in the controlling terminal session  
+kill -3 [process id] - signal sent when ctl+d is entered in terminal controlling session  
+kill -9 [process id] - signal sent to immediately kill process, no catch/ignore possible  
+kill -20 [process id] - signal sent to suspend a process, can be used later; also sent by ctl+z in controlling terminal session.  
 
 
 <h2>/* Process foreground/background */</h2>  
@@ -92,7 +92,7 @@ apt update - updates the list of available packages and their versions
 apt upgrade - installs newer versions of packages you have  
 apt update && apt upgrade - both  
 apt install [package name] - installs a specific package using apt  
-apt list --installed - shows all installed packages  
+apt list -`-installed - shows all installed packages  
 cat /etc/apt/sources.list -  show package repository information  
 apt-cache search [package name] - basically runs grep on local package descriptions  
 apt-cahe show [package name] - shows additional details about a given package  
