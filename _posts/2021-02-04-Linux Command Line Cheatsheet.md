@@ -10,7 +10,7 @@ cd ~ - home folder
 cd .. - go up one folder  
 mkdir - make directory  
 rmdir - remove directory (-r for recursive)  
-rm- remove file  
+rm - remove file  
 mv [filename] [directory] - move file to directory (eg mv test.txt Downloads/)  
 pwd - see present working directory  
 ls - list subdirectories (-la to include hidden)  
