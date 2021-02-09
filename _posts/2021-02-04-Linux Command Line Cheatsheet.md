@@ -26,14 +26,20 @@ tr - allows you to trim/remove chars from text based upon char (-d [char you wan
 
 <h2>/* Basic User Stuff */</h2>  
 psswd - change password for current user  
-adduser - creates new user, (eg adduser John)  
+useradd - creates new user, (eg adduser John)  
+usermod - modify an existing user  
+userdel - remove a user & related files  
+groupadd - add a group  
+groupmod - modify a group  
+groupdel - remove a group  
 su - switch user, (eg su John)  
 sudo - super user perm  
+visudo - opens /etc/sudoers file for edit, exclusively use this to manage /etc/sudoers  
 cat /etc/passwd - see all users  
 
 
 <h2>/* File permissions, editing, viewing, and creating */</h2>  
-chmod - change mode, edits access (eg chmod 777 hello.txt (gives all file permissions.), chmod +x (makes executable))  
+chmod - change mode, edits access (eg chmod 0777 hello.txt (gives all file permissions. always user 4 digits.), chmod +x (makes executable))  
 First char, d or -, stands for directory (d) versus file (-)  
 The next 9 characters are rwx, rwx, rwx for the owner, owner group, and all other users. The letters stand for read (r), write (w), or execute (x). For the .bash_history for instance, we see it is a file, the owner can read or write to it, the owner group and read it, and all others can read it.  
 
