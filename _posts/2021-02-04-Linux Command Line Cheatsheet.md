@@ -63,7 +63,7 @@ netstat - shows active connections on machine (usually use netstat -ano)
 route - shows your routing table. essentially shows your local traffic exit for potential pivot if there are multiple routes.  
 
 
-<h2>/* Starting and stopping services - web host example*/</h2>  
+<h2>/* Starting and stopping services - web host example */</h2>  
 <h3>/* ideal - systemctl gives greater control but not always available */</h3>  
 systemctl start apache2 - start apache webserver  
 systemctl stop apach2 - stop apache webserver  
