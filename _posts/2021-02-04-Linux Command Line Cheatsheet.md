@@ -46,7 +46,7 @@ chmod - change mode, edits access (eg chmod 0777 hello.txt (gives all file permi
 First char, d or -, stands for directory (d) versus file (-) The next 9 characters are rwx, rwx, rwx for the owner, owner group, and all other users. The letters stand for read (r), write (w), or execute (x). For the .bash_history for instance, we see it is a file, the owner can read or write to it, the owner group can read it, and all others can read it. The file also belongs to root, and is within the root owner group.  
 <h3>/* editing, viewing, and creating files */</h3>
 echo "text" > filename.txt - creates a file by the name of filename.txt with the contents "text"  
-echo "more text" >> filename.txt - appends "more text" to filename.txt  
+echo "more text" >\> filename.txt - appends "more text" to filename.txt  
 cat filename.txt - prints filename.txt contents to terminal  
 touch newfile.txt - creates a new file titled newfile.txt  
 nano newfile.txt - opens (or creates) newfile.txt in nano terminal text editor  
