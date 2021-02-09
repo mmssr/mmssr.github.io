@@ -40,7 +40,7 @@ cat /etc/passwd - see all users
 
 <h2>/* File permissions, editing, viewing, and creating */</h2>  
 <h3>/* chmod and file properties */</h3>
-chmod - change mode, edits access (eg chmod 0777 hello.txt (gives all file permissions. always user 4 digits.), chmod +x (makes executable))  
+chmod - change mode, edits access (eg chmod 0777 hello.txt (gives all file permissions. **always use 4 digits.**), chmod +x (makes executable))  
 ```[file perms] [hard link count] [owner name] [owner group] [file size (bytes)] [last mod time] [name]```  
 ![chmod](/assets/chmod.png)  
 First char, d or -, stands for directory (d) versus file (-) The next 9 characters are rwx, rwx, rwx for the owner, owner group, and all other users. The letters stand for read (r), write (w), or execute (x). For the .bash_history for instance, we see it is a file, the owner can read or write to it, the owner group can read it, and all others can read it. The file also belongs to root, and is within the root owner group.  
