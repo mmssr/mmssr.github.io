@@ -49,8 +49,9 @@ echo "text" > filename.txt - creates a file by the name of filename.txt with the
 echo "more text" >\> filename.txt - appends "more text" to filename.txt  
 cat filename.txt - prints filename.txt contents to terminal  
 touch newfile.txt - creates a new file titled newfile.txt  
+vim newfile.txt - opens (or creates) newfile.txt in vim text editor  
 nano newfile.txt - opens (or creates) newfile.txt in nano terminal text editor  
-gedit newfile.txt  - opens newfile.txt in gedit graphical text editor  
+gedit newfile.txt - opens (or creates) newfile.txt in gedit graphical text editor  
 
 
 <h2>/* Network Commands */</h2>  
