@@ -24,6 +24,14 @@ cut - allows you to cut based upon delimiter (-d "[delim]) and sections (-f [whi
 tr - allows you to trim/remove chars from text based upon char (-d [char you want to remove]), (eg echo te:st | tr -d ":")  
 
 
+<h2>/* Basic Enumeration/Misc */</h2>  
+whoami - display current user  
+uname - display system info  
+free - display free and used system memory  
+df - display file system disk space usage (usually df -h for legibility)  
+uptime - display system runtime  
+
+
 <h2>/* Basic User Stuff */</h2>  
 psswd - change password for current user  
 useradd - creates new user, (eg adduser John)  
