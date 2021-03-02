@@ -5,6 +5,7 @@ date: 2021-02-04
 ---
 
 <h2>/* File/Basic Navigation */</h2>  
+ssh - secure remote login(eg ssh user@hostname.tld, ssh -i ~/key/location user@hostname.tld)  
 cd - change directory  
 cd ~ - home folder  
 cd .. - go up one folder  
