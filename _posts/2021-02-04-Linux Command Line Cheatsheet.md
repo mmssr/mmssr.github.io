@@ -5,7 +5,6 @@ date: 2021-02-04
 ---
 
 <h2>/* File/Basic Navigation */</h2>  
-ssh - secure remote login(eg ssh user@hostname.tld, ssh -i ~/key/location user@hostname.tld)  
 cd - change directory  
 cd ~ - home folder  
 cd .. - go up one folder  
@@ -23,6 +22,21 @@ cat [filename] - print contents of a file to terminal
 grep [pattern] - capture lines with pattern, (eg ping google.com -c 1 | grep "64 bytes")  
 cut - allows you to cut based upon delimiter (-d "[delim]) and sections (-f [which section]), (eg ping google.com -c 1 | grep "64 bytes" | cut -d " " -f 4)  
 tr - allows you to trim/remove chars from text based upon char (-d [char you want to remove]), (eg echo te:st | tr -d ":")  
+
+
+<h2>/* SSH */</h2>  
+ssh - secure remote login(eg ssh user@hostname.tld)  
+ssh -i ~/.ssh/myKey.key user@hostname.tld - ssh with key  
+<h3>/* Using the SSH Config File */</h3>  
+SSH can be configured within ~/.ssh/config and /etc/ssh/ssh_config. When ssh is run, it will pull from first the command line arguments, then ~/.ssh/config, and finally /etc/ssh/ssh_config. An example of how to create a persistent entry for ssh would be adding the following to your ~/.ssh/config file:  
+```  
+Host myServer  
+    HostName 192.168.1.1  
+    User username  
+    Port 1234  
+    IdentityFile ~/.ssh/myServer.key  
+ ```  
+ Following this, you should be able to connect to your server with: ssh myServer  
 
 
 <h2>/* Basic Enumeration/Misc */</h2>  
