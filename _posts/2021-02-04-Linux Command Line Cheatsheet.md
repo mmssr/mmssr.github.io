@@ -22,6 +22,7 @@ cat [filename] - print contents of a file to terminal
 grep [pattern] - capture lines with pattern, (eg ping google.com -c 1 | grep "64 bytes")  
 cut - allows you to cut based upon delimiter (-d "[delim]) and sections (-f [which section]), (eg ping google.com -c 1 | grep "64 bytes" | cut -d " " -f 4)  
 tr - allows you to trim/remove chars from text based upon char (-d [char you want to remove]), (eg echo te:st | tr -d ":")  
+<hr>  
 
 
 <h2>/* SSH */</h2>  
@@ -44,6 +45,7 @@ Forward remote port to local server:
 ```ssh -R [REMOTE:]REMOTE_PORT:DESTINATION:DESTINATION_PORT [USER@]SSH_SERVER```  
 Dynamic SOCKS proxy server:  
 ```ssh -D [LOCAL_IP:]LOCAL_PORT [USER@]SSH_SERVER```  
+<hr>  
 
 
 <h2>/* Basic Enumeration/Misc */</h2>  
@@ -52,6 +54,7 @@ uname - display system info
 free - display free and used system memory  
 df - display file system disk space usage (usually df -h for legibility)  
 uptime - display system runtime  
+<hr>  
 
 
 <h2>/* Basic User Stuff */</h2>  
@@ -66,6 +69,7 @@ su - switch user, (eg su John)
 sudo - super user perm  
 visudo - opens /etc/sudoers file for edit, exclusively use this to manage /etc/sudoers  
 cat /etc/passwd - see all users  
+<hr>  
 
 
 <h2>/* File permissions, editing, viewing, and creating */</h2>  
@@ -82,6 +86,7 @@ touch newfile.txt - creates a new file titled newfile.txt
 vim newfile.txt - opens (or creates) newfile.txt in vim text editor  
 nano newfile.txt - opens (or creates) newfile.txt in nano terminal text editor  
 gedit newfile.txt - opens (or creates) newfile.txt in gedit graphical text editor  
+<hr>  
 
 
 <h2>/* Network Commands */</h2>  
@@ -91,6 +96,7 @@ ping - ping address, (eg ping google.com -c 3 (tries to ping google.com 3x))
 arp - shows you ap associated with mac (usually use arp -a)  
 netstat - shows active connections on machine (usually use netstat -ano)  
 route - shows your routing table. essentially shows your local traffic exit for potential pivot if there are multiple routes.  
+<hr>  
 
 
 <h2>/* Starting and stopping services - web host example */</h2>  
@@ -105,6 +111,7 @@ systemctl disable [service] - disable service to begin at startup, (eg systemctl
 systemctl list-units -\-type=service - lists all services  
 ps -aux | grep [service name] - check for running service  
 journalctl -u [servicename].service --no-pager - view the logs associated with a service  
+<hr>  
 
 
 <h2>/* Process kills */</h2>  
@@ -115,15 +122,18 @@ kill -2 [process id] - signal to interrupt a process, or ctl+c in the controllin
 kill -3 [process id] - signal sent when ctl+d is entered in terminal controlling session  
 kill -9 [process id] - signal sent to immediately kill process, no catch/ignore possible  
 kill -20 [process id] - signal sent to suspend a process, can be used later; also sent by ctl+z in controlling terminal session.  
+<hr>  
 
 
 <h2>/* Process foreground/background */</h2>  
 todo  
+<hr>  
 
 
 <h2>/* Starting python webserver or ftp server */</h2>  
 python -m SimpleHTTPServer [port number] - starts a python webserver in your current subdirectory at given port  
 python -m pyftpdlib -p [port number] - starts a python ftp server in your current subdirectory at given port  
+<hr>  
 
 
 <h2>/* Installing and updating tools via APT */</h2>  
@@ -135,6 +145,7 @@ apt list -\-installed - shows all installed packages
 cat /etc/apt/sources.list -  show package repository information  
 apt-cache search [package name] - basically runs grep on local package descriptions  
 apt-cahe show [package name] - shows additional details about a given package  
+<hr>  
 
 
 <h2>/* Installing and updating tools on github via GIT */</h2>  
@@ -143,6 +154,7 @@ apt-cahe show [package name] - shows additional details about a given package
 3. git clone [link] (or do both as mkdir /opt/[name] && git clone [link] /opt/[name])  
 4. Change directory to the dir you just created  
 5. Follow any additional instructions given, such as "pip install ." or "make && make test"  
+<hr>  
 
 
 <h2>/* Installing via DPKG */</h2>  
