@@ -141,8 +141,8 @@ apt-cahe show [package name] - shows additional details about a given package
 1. Copy the "clone or download link" on github  
 2. Navigate to /opt/  
 3. git clone [link] (or do both as mkdir /opt/[name] && git clone [link] /opt/[name])  
-4. change directory to the dir you just created  
-5. follow any additional instructions given, such as "pip install ." or "make && make test"  
+4. Change directory to the dir you just created  
+5. Follow any additional instructions given, such as "pip install ." or "make && make test"  
 
 
 <h2>/* Installing via DPKG */</h2>  
