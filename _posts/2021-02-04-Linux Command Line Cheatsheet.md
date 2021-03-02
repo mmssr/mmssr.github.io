@@ -59,7 +59,7 @@ uptime - display system runtime
 
 
 <h2>/* Basic User Stuff */</h2>  
-psswd - change password for current user  
+psswd - change password for current user (eg sudo psswd John, sudo psswd without a username would run as root and change root password.)
 useradd - creates new user, (eg adduser John)  
 usermod - modify an existing user  
 userdel - remove a user & related files  
