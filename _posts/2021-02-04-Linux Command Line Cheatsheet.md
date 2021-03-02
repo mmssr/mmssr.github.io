@@ -36,6 +36,7 @@ Host myServer
     User username  
     Port 1234  
     IdentityFile ~/.ssh/myServer.key  
+    
  ```  
 Following this, you should be able to connect to your server with: ssh myServer  
 <h3>/* Port Forwarding */</h3>  
