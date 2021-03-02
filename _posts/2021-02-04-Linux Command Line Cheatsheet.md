@@ -36,7 +36,14 @@ Host myServer
     Port 1234  
     IdentityFile ~/.ssh/myServer.key  
  ```  
- Following this, you should be able to connect to your server with: ssh myServer  
+Following this, you should be able to connect to your server with: ssh myServer  
+<h3>/* Port Forwarding */</h3>  
+Forward local port to remote server:  
+```ssh -L [LOCAL_IP:]LOCAL_PORT:DESTINATION:DESTINATION_PORT [USER@]SSH_SERVER```  
+Forward remote port to local server:  
+```ssh -R [REMOTE:]REMOTE_PORT:DESTINATION:DESTINATION_PORT [USER@]SSH_SERVER```  
+Dynamic SOCKS proxy server:  
+```ssh -D [LOCAL_IP:]LOCAL_PORT [USER@]SSH_SERVER```  
 
 
 <h2>/* Basic Enumeration/Misc */</h2>  
