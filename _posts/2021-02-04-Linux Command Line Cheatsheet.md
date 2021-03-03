@@ -27,7 +27,7 @@ cut -- allows you to cut based upon delimiter (-d "[delim]) and sections (-f [wh
 tr -- allows you to trim/remove chars from text based upon char (-d [char you want to remove]), (eg echo te:st | tr -d ":")  
 <h3>/* Misc Notes/Tips */</h3>  
 Bash has several prompts can be edited:  
-PS1 -- typical "waiting for command prompt, like username@hostname:~$  
+PS1 -- typical "waiting for command prompt, like ```username@hostname:~$```  
 PS2 -- Forward slash can be used to continue a long prompt on the next line, and can be customized in PS2:  
 ```  
 
