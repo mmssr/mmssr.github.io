@@ -7,7 +7,7 @@ date: 2021-02-04
 <h2>/* File/Basic Navigation */</h2>  
 cd -- change directory  
 cd ~ -- home folder  
-cd .. -- go up one folder 
+cd .. -- go up one folder  
 cd - -- previous directory  
 pushd [directory] -- change to directory, saving where you were before  
 popd -- return to directory saved in pushd  
