@@ -74,7 +74,7 @@ uptime -- display system runtime
 <hr>  
 
 
-<h2>/* Basic User Stuff */</h2>  
+<h2>/* Basic User/Host Stuff */</h2>  
 psswd -- change password for current user (eg sudo psswd John, sudo psswd without a username would run as root and change root password.)
 useradd -- creates new user, (eg adduser John)  
 usermod -- modify an existing user  
@@ -86,6 +86,8 @@ su -- switch user, (eg su John)
 sudo -- super user perm  
 visudo -- opens /etc/sudoers file for edit, exclusively use this to manage /etc/sudoers  
 cat /etc/passwd -- see all users  
+cat /etc/shadow -- see all hashed passwords  
+hostnamectl -- control system hostname as well as related settings (eg hostnamectl set-hostname newhostname)  
 <hr>  
 
 
