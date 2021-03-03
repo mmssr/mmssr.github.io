@@ -25,8 +25,20 @@ cat [filename] -- print contents of a file to terminal
 grep [pattern] -- capture lines with pattern, (eg ping google.com -c 1 | grep "64 bytes")  
 cut -- allows you to cut based upon delimiter (-d "[delim]) and sections (-f [which section]), (eg ping google.com -c 1 | grep "64 bytes" | cut -d " " -f 4)  
 tr -- allows you to trim/remove chars from text based upon char (-d [char you want to remove]), (eg echo te:st | tr -d ":")  
-<hr>  
+<h3>/* Misc Notes/Tips */</h3>  
+Bash has several prompts can be edited:  
+PS1 -- typical "waiting for command prompt, like username@hostname:~$  
+PS2 -- Forward slash can be used to continue a long prompt on the next line, and can be customized in PS2:  
+```  
 
+username@hostname:~$ sudo apt \  
+> update  
+
+```   
+PS3 -- prompt for "select" command (interactive menus)  
+PS4 -- prompt for debugging trace line prefix  
+PROMPT_COMMAND -- pre-prompt, eg may show timestamps just before a prompt a la ```[12:52:00]username@hostname:~$```  
+<hr>  
 
 <h2>/* SSH */</h2>  
 ssh -- secure remote login(eg ssh user@hostname.tld)  
