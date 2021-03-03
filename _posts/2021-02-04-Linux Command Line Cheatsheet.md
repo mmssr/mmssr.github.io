@@ -46,6 +46,7 @@ ssh -i ~/.ssh/myKey.key user@hostname.tld -- ssh with key
 <h3>/* Using the SSH Config File */</h3>  
 SSH can be configured within ~/.ssh/config and /etc/ssh/ssh_config. When ssh is run, it will pull from first the command line arguments, then ~/.ssh/config, and finally /etc/ssh/ssh_config. An example of how to create a persistent entry for ssh would be adding the following to your ~/.ssh/config file:  
 ```  
+
 Host myServer  
     HostName 192.168.1.1  
     User username  
