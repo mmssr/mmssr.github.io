@@ -88,6 +88,7 @@ visudo -- opens /etc/sudoers file for edit, exclusively use this to manage /etc/
 cat /etc/passwd -- see all users  
 cat /etc/shadow -- see all hashed passwords  
 hostnamectl -- control system hostname as well as related settings (eg hostnamectl set-hostname newhostname)  
+timedatectl -- control system clocl as well as related settings (eg timedatectl list-timezones, timedatectl set-timezone America/New_York)  
 <hr>  
 
 
