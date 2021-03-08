@@ -110,6 +110,7 @@ less -- view and search text files (eg man less | less)
 <h3>/* vim */</h3>  
 vim newfile.txt -- opens (or creates) newfile.txt in vim text editor  
 Some normal mode commands (pressing esc a few times will always return you to normal mode,):  
+h ←, j ↑, k ↓, l → keys to navigate  
 :q! -- quit without saving  
 u -- undo  
 :w -- save  
