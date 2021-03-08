@@ -25,6 +25,7 @@ cat [filename] -- print contents of a file to terminal
 grep [pattern] -- capture lines with pattern, (eg ping google.com -c 1 | grep "64 bytes")  
 cut -- allows you to cut based upon delimiter (-d "[delim]) and sections (-f [which section]), (eg ping google.com -c 1 | grep "64 bytes" | cut -d " " -f 4)  
 tr -- allows you to trim/remove chars from text based upon char (-d [char you want to remove]), (eg echo te:st | tr -d ":")  
+history -- displayes your cached command history. ![number] repeats that command.  
 <h3>/* Misc Notes/Tips */</h3>  
 Bash has several prompts can be edited:  
 PS1 -- typical "waiting for command prompt, like ```username@hostname:~$```  
@@ -103,9 +104,21 @@ echo "text" > filename.txt -- creates a file by the name of filename.txt with th
 echo "more text" >\> filename.txt -- appends "more text" to filename.txt  
 cat filename.txt -- prints filename.txt contents to terminal  
 touch newfile.txt -- creates a new file titled newfile.txt  
-vim newfile.txt -- opens (or creates) newfile.txt in vim text editor  
 nano newfile.txt -- opens (or creates) newfile.txt in nano terminal text editor  
 gedit newfile.txt -- opens (or creates) newfile.txt in gedit graphical text editor  
+less -- view and search text files (eg man less | less)  
+<h3>/* vim */</h3>  
+vim newfile.txt -- opens (or creates) newfile.txt in vim text editor  
+Some normal mode commands (pressing esc a few times will always return you to normal mode,):  
+:q! -- quit without saving  
+u -- undo  
+:w -- save  
+:wq -- save and quit  
+G -- go to bottom of file  
+gg -- go to top of file  
+/[word] -- search for word  
+vimtutor -- command to get good at vim  
+i -- enter "insert" mode  
 <hr>  
 
 
@@ -163,6 +176,7 @@ apt update && apt upgrade -- both
 apt install [package name] -- installs a specific package using apt  
 apt list -\-installed -- shows all installed packages  
 cat /etc/apt/sources.list --  show package repository information  
+add-apt-repository "[repository link]" -- add repository to /etc/apt/sources.list  
 apt-cache search [package name] -- basically runs grep on local package descriptions  
 apt-cahe show [package name] -- shows additional details about a given package  
 <hr>  
