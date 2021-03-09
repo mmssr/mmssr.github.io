@@ -137,12 +137,13 @@ route -- shows your routing table. essentially shows your local traffic exit for
 <h3>/* ideal -- systemctl gives greater control but not always available */</h3>  
 systemctl start apache2 -- start apache webserver  
 systemctl stop apach2 -- stop apache webserver  
+systemctl enable [service] -- enable service to begin at startup, (eg systemctl enable postgresql)  
+systemctl disable [service] -- disable service to begin at startup, (eg systemctl disable postgresql)  
+systemctl status [service] -- check service status  
+systemctl list-units -\-type=service -- lists all services  
 <h3>/* backup */</h3>  
 service apache2 start -- start apache webserver  
 service apache2 stop -- stop apache webserver  
-systemctl enable [service] -- enable service to begin at startup, (eg systemctl enable postgresql)  
-systemctl disable [service] -- disable service to begin at startup, (eg systemctl disable postgresql)  
-systemctl list-units -\-type=service -- lists all services  
 ps -aux | grep [service name] -- check for running service  
 journalctl -u [servicename].service -\-no-pager -- view the logs associated with a service  
 <hr>  
