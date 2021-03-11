@@ -21,10 +21,6 @@ locate [keyword] -- locate a file (eg locate bash)
 updatedb -- update filesystem database  
 man [command] -- see options and instructions for command (eg man ls)  
 [command] -\-help -- usually a simpler version of man  
-cat [filename] -- print contents of a file to terminal  
-grep [pattern] -- capture lines with pattern, (eg ping google.com -c 1 | grep "64 bytes")  
-cut -- allows you to cut based upon delimiter (-d "[delim]) and sections (-f [which section]), (eg ping google.com -c 1 | grep "64 bytes" | cut -d " " -f 4)  
-tr -- allows you to trim/remove chars from text based upon char (-d [char you want to remove]), (eg echo te:st | tr -d ":")  
 history -- displayes your cached command history. ![number] repeats that command.  
 <h3>/* Misc Notes/Tips */</h3>  
 Bash has several prompts can be edited:  
@@ -107,8 +103,13 @@ touch newfile.txt -- creates a new file titled newfile.txt
 nano newfile.txt -- opens (or creates) newfile.txt in nano terminal text editor  
 gedit newfile.txt -- opens (or creates) newfile.txt in gedit graphical text editor  
 less -- view and search text files (eg man less | less)  
-<h3>/* vim */</h3>  
-vim newfile.txt -- opens (or creates) newfile.txt in vim text editor  
+cat [filename] -- print contents of a file to terminal  
+grep [pattern] -- capture lines with pattern, (eg ping google.com -c 1 | grep "64 bytes")  
+cut -- allows you to cut based upon delimiter (-d "[delim]) and sections (-f [which section]), (eg ping google.com -c 1 | grep "64 bytes" | cut -d " " -f 4)  
+tr -- allows you to trim/remove chars from text based upon char (-d [char you want to remove]), (eg echo te:st | tr -d ":")  
+head -- display the beginning of a file, 10 lines or -n lines  
+less -- display the end of a file,  10 lines or -n lines (less -f /var/log/auth.log will follow along as it populates)  
+grep -- finds a pattern and ret))))))))) newfile.txt in vim text editor  
 Some normal mode commands (pressing esc a few times will always return you to normal mode,):  
 Keys to navigate: h ←, j ↑, k ↓, l →  
 :q! -- quit without saving  
