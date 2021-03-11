@@ -195,6 +195,7 @@ apt-cahe show [package name] -- shows additional details about a given package
 <h2>/* Installing via DPKG */</h2>  
 1. wget [link to .deb package] - download the tool directly  
 2. dpkg -i [.deb package filename] -  installs tool, generally immediately ready to use  
+<hr>  
 
 ```  
 
