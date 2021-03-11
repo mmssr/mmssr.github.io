@@ -41,7 +41,7 @@ PROMPT_COMMAND -- pre-prompt, eg may show timestamps just before a prompt a la `
 ssh -- secure remote login(eg ssh user@hostname.tld)  
 ssh -i ~/.ssh/myKey.key user@hostname.tld -- ssh with key  
 <h3>/* Using the SSH Config File */</h3>  
-SSH can be configured within ~/.ssh/config and /etc/ssh/ssh_config. When ssh is run, it will pull from first the command line arguments, then ~/.ssh/config, and finally /etc/ssh/ssh_config. An example of how to create a persistent entry for ssh would be adding the following to your ~/.ssh/config file:  
+SSH can be configured within ~/.ssh/config and /etc/ssh/ssh_config. Your listener can be configured with /etc/ssh/sshd_config (eg, to change the default port from 22). When ssh is run, it will pull from first the command line arguments, then ~/.ssh/config, and finally /etc/ssh/ssh_config. An example of how to create a persistent entry for ssh would be adding the following to your ~/.ssh/config file:  
 ```  
 
 Host myServer  
@@ -131,7 +131,9 @@ iwconfig -- shows your wireless inferface info
 ping -- ping address, (eg ping google.com -c 3 (tries to ping google.com 3x))  
 arp -- shows you ap associated with mac (usually use arp -a)  
 netstat -- shows active connections on machine (usually use netstat -ano)  
-route -- shows your routing table. essentially shows your local traffic exit for potential pivot if there are multiple routes.  
+route -- shows your routing table. essentially shows your local traffic exit for potential pivot if there are multiple routes   
+ss -- socket status, see man page for options (very specific, eg ss -ltp to see listening tcp sockets and the processes associated)  
+iptables -- firewall tool, iptables -L shows active rules (can use something simpler like ufw to configure)  
 <hr>  
 
 
@@ -159,11 +161,6 @@ kill -2 [process id] -- signal to interrupt a process, or ctl+c in the controlli
 kill -3 [process id] -- signal sent when ctl+d is entered in terminal controlling session  
 kill -9 [process id] -- signal sent to immediately kill process, no catch/ignore possible  
 kill -20 [process id] -- signal sent to suspend a process, can be used later; also sent by ctl+z in controlling terminal session.  
-<hr>  
-
-
-<h2>/* Process foreground/background */</h2>  
-todo  
 <hr>  
 
 
@@ -198,3 +195,9 @@ apt-cahe show [package name] -- shows additional details about a given package
 <h2>/* Installing via DPKG */</h2>  
 1. wget [link to .deb package] - download the tool directly  
 2. dpkg -i [.deb package filename] -  installs tool, generally immediately ready to use  
+
+```  
+
+Todo: file system structure, process foreground/background, sort, uniq, awk, sed  
+
+```  
