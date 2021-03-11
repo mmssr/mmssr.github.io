@@ -90,12 +90,12 @@ timedatectl -- control system clocl as well as related settings (eg timedatectl 
 
 
 <h2>/* File permissions, editing, viewing, and creating */</h2>  
-<h3>/* chmod and file properties */</h3>
+<h3>/* chmod and file properties */</h3>  
 chmod -- change mode, edits access (eg chmod 0777 hello.txt (gives all file permissions. **always use 4 digits.**), chmod +x (makes executable))  
 ```[file perms] [hard link count] [owner name] [owner group] [file size (bytes)] [last mod time] [name]```  
 ![chmod](/assets/chmod.png)  
 First char, d or -, stands for directory (d) versus file (-) The next 9 characters are rwx, rwx, rwx for the owner, owner group, and all other users. The letters stand for read (r), write (w), or execute (x). For the .bash_history for instance, we see it is a file, the owner can read or write to it, the owner group can read it, and all others can read it. The file also belongs to root, and is within the root owner group.  
-<h3>/* editing, viewing, and creating files */</h3>
+<h3>/* editing, viewing, and creating files */</h3>  
 echo "text" > filename.txt -- creates a file by the name of filename.txt with the contents "text"  
 echo "more text" >\> filename.txt -- appends "more text" to filename.txt  
 cat filename.txt -- prints filename.txt contents to terminal  
@@ -109,7 +109,8 @@ cut -- allows you to cut based upon delimiter (-d "[delim]) and sections (-f [wh
 tr -- allows you to trim/remove chars from text based upon char (-d [char you want to remove]), (eg echo te:st | tr -d ":")  
 head -- display the beginning of a file, 10 lines or -n lines  
 less -- display the end of a file,  10 lines or -n lines (less -f /var/log/auth.log will follow along as it populates)  
-grep -- finds a pattern and ret))))))))) newfile.txt in vim text editor  
+<h3>/* vim */</h3>  
+vim newfile.txt -- opens (or creates) newfile.txt in vim text editor  
 Some normal mode commands (pressing esc a few times will always return you to normal mode,):  
 Keys to navigate: h ←, j ↑, k ↓, l →  
 :q! -- quit without saving  
