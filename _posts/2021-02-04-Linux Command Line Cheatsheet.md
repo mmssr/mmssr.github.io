@@ -68,6 +68,8 @@ uname -- display system info
 free -- display free and used system memory  
 df -- display file system disk space usage (usually df -h for legibility)  
 uptime -- display system runtime  
+locate [name] -- search for files or directories by name (eg find access.log)  
+find /[directory] -- search for file or directory with more modifiers, -exec is quite helpful (eg find /var -name access.log to find access.log within /var)  
 <hr>  
 
 
@@ -145,11 +147,19 @@ systemctl enable [service] -- enable service to begin at startup, (eg systemctl 
 systemctl disable [service] -- disable service to begin at startup, (eg systemctl disable postgresql)  
 systemctl status [service] -- check service status  
 systemctl list-units -\-type=service -- lists all services  
+systemctl list-timers -- list services running on timers  
 <h3>/* backup */</h3>  
 service apache2 start -- start apache webserver  
 service apache2 stop -- stop apache webserver  
 ps -aux | grep [service name] -- check for running service  
 journalctl -u [servicename].service -\-no-pager -- view the logs associated with a service  
+<h3>/* Scheduling services with cron */</h3>  
+Cron allows you to set up scheduled services which can be listed with crontab (per use) or from /etc/cron.*  
+crontab -- broad command with a few options, check man page. -e is to edit the crontab, -l is to list the current crontab, etc  
+ls /etc/cron.hourly -- output the processes running hourly  
+ls /etc/cron.daily -- output the processes running daily  
+ls /etc/cron.weekly -- output the processes running weekly  
+ls /etc/cron.monthly -- output the processes running monthly  
 <hr>  
 
 
