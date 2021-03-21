@@ -74,7 +74,7 @@ find /[directory] -- search for file or directory with more modifiers, -exec is 
 
 
 <h2>/* Basic User/Host Stuff */</h2>  
-psswd -- change password for current user (eg sudo psswd John, sudo psswd without a username would run as root and change root password.)
+psswd -- change password for current user (eg sudo psswd John, sudo psswd without a username would run as root and change root password.)  
 useradd -- creates new user, (eg adduser John)  
 usermod -- modify an existing user  
 userdel -- remove a user & related files  
