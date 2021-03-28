@@ -33,7 +33,7 @@ What is happening step by step to extract a compressed archive:
 gunzip tarball.tar.gz -- uncompresses file out of gzip, eg into tarball.tar  
 tar -xvf tarball.tar -- unbundle file back into source  
 To do both:  
-tar xvzf compressedtarball.tar.gz -- uncompress and unbundle into source  
+tar -xvzf compressedtarball.tar.gz -- uncompress and unbundle into source  
 <h3>/* Misc Notes/Tips */</h3>  
 Bash has several prompts can be edited:  
 PS1 -- typical "waiting for command prompt, like ```username@hostname:~$```  
