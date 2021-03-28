@@ -21,7 +21,19 @@ locate [keyword] -- locate a file (eg locate bash)
 updatedb -- update filesystem database  
 man [command] -- see options and instructions for command (eg man ls)  
 [command] -\-help -- usually a simpler version of man  
-history -- displayes your cached command history. ![number] repeats that command.  
+history -- displayes your cached command history, ![number] repeats that command  
+<h3>/* Archives */</h3>  
+Can be used to compress a series of files or folders. Uses a combination of tar and gzip - tar takes the file[s] and creates a single bundle file (tarball). Gzip then actually compresses it. Many distros will also have .zip, however .tar.gz will retain linux file attributes such as permissions; as opposed to zip which will retain MSDOS attributes.  
+What is happening step by step to create a compressed archive:  
+tar -cvf tarball.tar [source file/directory] -- creates bundle from a source  
+gzip tarball.tar -- compresses bundle into gz, eg tarball.tar.gz  
+To do both:  
+tar -cvzf compressedtarball.tar.gz [source file/directory] -- creates compressed bundle from a source (may be .tgz as well)  
+What is happening step by step to extract a compressed archive:  
+gunzip tarball.tar.gz -- uncompresses file out of gzip, eg into tarball.tar  
+tar -xvf tarball.tar -- unbundle file back into source  
+To do both:  
+tar xvzf compressedtarball.tar.gz -- uncompress and unbundle into source  
 <h3>/* Misc Notes/Tips */</h3>  
 Bash has several prompts can be edited:  
 PS1 -- typical "waiting for command prompt, like ```username@hostname:~$```  
