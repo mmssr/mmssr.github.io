@@ -119,9 +119,13 @@ hr {
   border-top: 1px dotted #40798C;
 }
 
+img {
+    height: auto;
+    max-width: 90%;
+
 .hero-image img{
   height: auto;
-  max-width: 75%;
+  max-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #0000;
