@@ -125,15 +125,11 @@ img {
 
 .hero-image img{
   height: auto;
-  /*max-width: 100%;
-  background-position: center;
+  max-width: 90%;
+  /*background-position: center;
   background-repeat: no-repeat;
-  background-color: #0000;
+  background-color: #0000;*/
   position: absolute;
   top: 50%; left: 50%;
-  transform: translate(-50%, -50%)*/
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  transform: translate(-50%, -50%)
 }
