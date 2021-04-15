@@ -120,12 +120,11 @@ hr {
 }
 
 .hero-image {
-  /* Set a specific height */
   height: 50%;
-
-  /* Position and center the image to scale nicely on all screens */
+  width: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background: #FBFBFB;
   position: relative;
 }
