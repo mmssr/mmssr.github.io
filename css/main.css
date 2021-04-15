@@ -9,7 +9,7 @@ html {
 
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 75%;
 }
 
 nav ul, footer ul {
@@ -129,5 +129,6 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #0000;
-  position: center;
+  text-align: center;
+  /* position: center; */
 }
