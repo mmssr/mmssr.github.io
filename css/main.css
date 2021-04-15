@@ -121,10 +121,10 @@ hr {
 
 .hero-image {
   height: 50%;
-  width: 50%;
+  max-width: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background: #FBFBFB;
-  position: relative;
+  position: center;
 }
