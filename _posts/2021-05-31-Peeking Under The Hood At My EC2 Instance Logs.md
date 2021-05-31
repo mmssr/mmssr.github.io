@@ -105,7 +105,8 @@ May 31 09:54:16 nimbus sshd[1648]: Connection reset by 81.161.63.100 port 45458 
 May 31 09:54:16 nimbus sshd[1649]: Connection reset by 81.161.63.100 port 45464 [preauth]
 May 31 10:00:14 nimbus sshd[1660]: Invalid user virtualbox from 157.92.13.155 port 46920
 May 31 10:00:14 nimbus sshd[1660]: Received disconnect from 157.92.13.155 port 46920:11: Bye Bye [preauth]
-May 31 10:00:14 nimbus sshd[1660]: Disconnected from invalid user virtualbox 157.92.13.155 port 46920 [preauth]
+May 31 10:00:14 nimbus sshd[1660]: Disconnected from invalid user virtualbox 157.92.13.155 port 46920 [preauth]  
+
 ```  
 
 
