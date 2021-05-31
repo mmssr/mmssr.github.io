@@ -89,7 +89,7 @@ May 31 07:59:28 nimbus sshd[53062]: Connection closed by invalid user pi 177.128
 
 ```  
 
-So what useful information do we see here? Well, first of all we can concretely tell that it is probably a good thing that we used an SSH key authentication method, because we have about 15 different machines attempting to access our machines. We can also see that some of them are attempting to access specific users associated with services, such as "azure", "oracle", "virtualbox", and more. If this is only over the course of an hour, imagine how many attempts occur over weeks, months, or years?  
+So what useful information do we see here? Well, first of all we can concretely tell that it is probably a good thing that we used an SSH key authentication method, because we have about 15 different machines attempting to access ours. We can also see that some of them are attempting to access specific users associated with services, such as "azure", "oracle", "virtualbox", and more. If this is only over the course of an hour, imagine how many attempts occur over weeks, months, or years?  
 
 Let's also take a look at our most recent logs. This can be done using ```tail```, a command which outputs the last 10 lines of a file, similar to cat. For log purposes, sometimes it is nice to run the command as ```tails -f /what/to/output```, which will continue to display new entries as they are appended. Here's what I get for my most recent logs:  
 
