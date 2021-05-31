@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Peeking Under The Hood At EC2 Instance Logs"
+title: "Peeking Under The Hood At My EC2 Instance Logs"
 date: 2021-05-31
 ---
 
@@ -103,7 +103,7 @@ May 31 10:00:14 nimbus sshd[1660]: Received disconnect from 157.92.13.155 port 4
 May 31 10:00:14 nimbus sshd[1660]: Disconnected from invalid user virtualbox 157.92.13.155 port 46920 [preauth]
 ```  
 
-The login attempts are constant! This is why proper authentication is so profoundly important. In reality, due to having previously installed ```fail2ban```, we have a daemon running to ban IPs showing malicious signs already. This means we aren't even seeing as many login attempts as we typically would. Let's take a look at our fail2ban logs. As we already saw navigating the filesystem earlier, we have ```/var/log/fail2ban.log``` to take a peek at:  
+The login attempts are constant! This is why proper authentication is so profoundly important. In reality, due to having previously installed ```fail2ban```, we have a daemon running to ban IPs showing malicious signs already. Fail2Ban runs by monitoring our logs, similar to how we might do so, and creating a ban list to alter our firewall table rules via certain criteria. If you think about how you might monitor these logs and alter your firewall rules, you would probably do so in a similar way. Eg, machine A repeatedly fails login attempts 4 times in 10 minues, machine A's IP is banned for x amount of time explicitely within the firewall rules (iptables). This means we aren't even seeing as many login attempts as we typically would. Let's take a look at our fail2ban logs. As we already saw navigating the filesystem earlier, we have ```/var/log/fail2ban.log``` to take a peek at:  
 
 ```  
 ubuntu@nimbus:~$ cat /var/log/fail2ban.log | grep "Ban"
