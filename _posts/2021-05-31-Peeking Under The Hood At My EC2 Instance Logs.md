@@ -8,7 +8,7 @@ date: 2021-05-31
 Setting up an Amazon Web Services EC2 instance is a good time. EC2 instances are available through AWS as a scalable cloud machine to use for whatever your purposes are, *so long as you do not break terms of service*. These allow you to set up a virtual machine, such as a ubuntu instance, and have it running 24/7 for free. Given that this machine is internet accessible. They are pretty easy to lock down using SSH public key authentication, but that doesn't mean you won't have a whole bunch of logs to parse through, so it is a great example for getting some experience under the hood looking at events.  
 
 
-<h2>/* Cats, Tails, Pipes, and Grep */</h2>  
+<h2>Cats, Tails, Pipes, and Grep</h2>  
 The easiest way to get started peeking at events within your system is pretty simple. You are probably familiar with cat, the command short for concatenate. Within the context of the command line interface, this will take a file and spit out the text. So, what is the simplest way to regurgitate login attempts to our machine? Knowing cat, all we really need to know now is where our log files are kept. Within the file system root folder, aka as high as you are going to go, we have /var/. /var/ is for variable data files, so you will tend to find things like logs, databases, email inboxes, and more. Navigating to /var/log/, we can see that we have a bunch of different log files. Syslogs, logs for our package manager, and more. What we are looking for is auth.log:  
 
 ```  
