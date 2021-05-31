@@ -129,9 +129,9 @@ ubuntu@nimbus:~$ cat /var/log/fail2ban.log | grep "Ban"
 2021-05-31 02:52:25,944 fail2ban.actions        [448]: NOTICE  [sshd] Ban 109.64.19.179
 2021-05-31 03:02:47,039 fail2ban.actions        [448]: NOTICE  [sshd] Ban 109.64.19.179
 2021-05-31 03:13:07,921 fail2ban.actions        [448]: NOTICE  [sshd] Ban 109.64.19.179
-2021-05-31 06:26:47,706 fail2ban.actions        [448]: NOTICE  [sshd] Ban 209.141.36.197
-```  
+2021-05-31 06:26:47,706 fail2ban.actions        [448]: NOTICE  [sshd] Ban 209.141.36.197  
 
+```  
 
 Looking into this, we have a few repeat offenders:  
 - 106.102.0.44  
