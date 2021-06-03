@@ -5,7 +5,7 @@ date: 2021-05-31
 ---
 
 <h2>Playing around in AWS for fun <s>and profit</s></h2>  
-Setting up an Amazon Web Services EC2 instance is a good time. EC2 instances are available through AWS as a scalable cloud machine to use for whatever your purposes are, *so long as you do not break terms of service*. These allow you to set up a virtual machine, such as a ubuntu instance, and have it running 24/7 for free. Given that this machine is internet accessible. They are pretty easy to lock down using SSH public key authentication, but that doesn't mean you won't have a whole bunch of logs to parse through, so it is a great example for getting some experience under the hood looking at events.  
+Setting up an Amazon Web Services EC2 instance is a good time. EC2 instances are available through AWS as a scalable cloud machine to use for whatever your purposes are, *so long as you do not break terms of service (oops)*. These allow you to set up a virtual machine, such as a ubuntu instance, and have it running 24/7 for free. Given that this machine is internet accessible. They are pretty easy to lock down using SSH public key authentication, but that doesn't mean you won't have a whole bunch of logs to parse through, so it is a great example for getting some experience under the hood looking at events.  
 
 
 <h2>Cats, Tails, Pipes, and Grep</h2>  
