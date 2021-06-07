@@ -8,7 +8,7 @@ date: 2021-06-07
 CTFs are information security competitions which tend to come in a few formats. Most that I have participated in follow a "Jeopardy Board" format, with numerous challenges to be solved. Others are more styled like hack-the-box, where you have a machine to root, and so on. Either way, the goal is to capture a flag, which is often a string in the format of flag{blah_blah_blah}. These are fantastic competitions for a variety of reasons, such as improving your technical skillset, learning to use new tools, and gaining a methodology for approaching abstract problems with little to no hints or prompts.  
 
 <h2>Forwards From Grandma</h2>  
-This was a challenge that I found from the Tenable CTF in 2021. You are given an email file along with the prompt: "My grandma sent me this email, but it looks like there’s a hidden message in it. Can you help me figure it out?" Feel free to poke at it yourself, but don't scroll too far as I will be spoiling it. Assuming you aren't using some bizarre OS I have never heard of, this challenge should be solveable without any special tools.  
+This was a challenge that I found from the Tenable CTF in 2021. You are given an <a href:="https://github.com/mmssr/mmssr.github.io/blob/master/assets/tmp.eml">email file</a> along with the prompt: "My grandma sent me this email, but it looks like there’s a hidden message in it. Can you help me figure it out?" Feel free to poke at it yourself, but don't scroll too far as I will be spoiling it. Assuming you aren't using some bizarre OS I have never heard of, this challenge should be solvable without any special tools.  
 
 Let's take a look at the email:  
 ![email](/assets/fwdfrmgma.PNG)  
