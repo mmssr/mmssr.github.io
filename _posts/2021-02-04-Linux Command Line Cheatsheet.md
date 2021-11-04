@@ -131,6 +131,8 @@ Keys to navigate: h ←, j ↑, k ↓, l →
 u -- undo  
 :w -- save  
 :wq -- save and quit  
+:[number] -- go to a specific line  
+:d[number] -- delete x number of lines, starting at cursor  
 G -- go to bottom of file  
 gg -- go to top of file  
 /[word] -- search for word  
