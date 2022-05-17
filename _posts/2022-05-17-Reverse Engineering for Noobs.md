@@ -9,6 +9,7 @@ Below is a presentation I am working on to introduce people to RE. Work in progr
 <hr>  
 
 {% raw %}  
+```  
 
 ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────┐ 
 │ anti-virus-virus-club.exe                                                                         _ □ x │
@@ -185,5 +186,6 @@ High Level Outline
     -Checking the headers for our sections
     -Checking strings
     -Checking function imports
-    
+
+```  
 {% endraw %}  
