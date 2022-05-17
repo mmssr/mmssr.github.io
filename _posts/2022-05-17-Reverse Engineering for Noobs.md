@@ -79,6 +79,7 @@ High Level Outline
 ![Registers](/assets/b-sides-knox2.PNG)  
 
 ```  
+
         -General Registers
             -Data Registers  
                 -Names are more historical than they are prescriptive.  
