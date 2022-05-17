@@ -8,6 +8,7 @@ date: 2022-05-17
 Below is a presentation I am working on to introduce people to RE. Work in progress :)  
 <hr>  
 ![Welcome](/assets/b-sides-knox.PNG)  
+```  
 High Level Outline  
 1. Introduction  
     -What is RE  
@@ -69,8 +70,12 @@ High Level Outline
                 -https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-vol-2a-manual.pdf  
                 -https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-vol-2b-manual.pdf  
                 -https://www.felixcloutier.com/x86/index.html  
-        -General Registers  
+```  
+
 ![Registers](/assets/b-sides-knox2.PNG)  
+
+```  
+        -General Registers
             -Data Registers  
                 -Names are more historical than they are prescriptive.  
                 -EAX: Accumulator, often for math and return values.  
@@ -133,3 +138,5 @@ High Level Outline
     -Checking the headers for our sections  
     -Checking strings  
     -Checking function imports  
+
+```  
