@@ -15,8 +15,8 @@ High Level Outline
         -Why not do xyz instead  
             -decompiling  
             -dynamic analysis  
-            -because we can  
-            -hacky = cool  
+            -because we can   
+            -hacky = cool   
     -What is our goal  
         -Introduction to concepts  
         -Diving board so you can absorb further concepts  
