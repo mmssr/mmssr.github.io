@@ -87,7 +87,7 @@ High Level Outline
                 -EBX: Base, often holds function params and indexed addresses.  
                 -ECX: Count, for loop counts (programmers: this is "i") and function params.  
                 -EDX: Data, general use and function params.  
-                -Smaller boxes are subregisters which can be used.   
+                -Internally labeled boxes are subregisters which can be used.   
             -Index Registers  
                 -ESI: Source Index, often stores constants or used as a pointer.  
                 -EDI: Destination Index, often a destination for data or used as a pointer.  
