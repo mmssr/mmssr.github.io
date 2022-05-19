@@ -28,8 +28,15 @@ High Level Outline
 
 2. Technical Prerequisites  
     -Executables  
-        -High level code compiled into machine code  
-        -Machine code can be dissassembled into assembly code  
+        -At a high level, here is what is going on:  
+            -We have instructions for humans but need to make machine code that a computer can execute.  
+            -With a compiled language, higher level code such C is parsed and compiled into machine code.  
+                -This compiling can be thought of in a few steps:  
+                    -A compiler takes the source code and converts it into machine language, such as an object file of your source code.  
+                    -A linker combines this object file with other pre-compiled object files so that your symbols (for example: identifiers for functions in libraries, global variables, etc) can be defined. When writing code you will often use functions you did not actually define within your source code. The linker takes your undefined symbols and adds the correct addresses to these instructions; outputting your executable file.  
+        -The executable binary looks like gibberish to us compared to the previous source code. However, this won't stop us from our goals.  
+            -Rather than view our binary in the lengthy binary form running, we can represent it in a shorter format, hex: B8 05 00 00 00.  
+             -Assembly is just translating this directly to a more human readable format. "B8 05 00 00 00" directly corresponds to "MOV EAX, 05" (move the value 05 into register EAX). B8 directly corresponds to literal circuits for this instruction on the processor, performing the MOV operation that loads the value 05 into the physical 32-bit memory register on the processor that we are referring to as EAX.  
     -How does a CPU work when a program is run  
         -Instruction is read from main memory by control unit.  
         -Instruction is executed by ALU using inputs from user or registers.  
