@@ -45,7 +45,7 @@ The compiled executable looks like gibberish to us compared to the previous sour
 
 ![CPU](/assets/b-sides-knox4.PNG)      
         
-<h3>x86 assembly overview (32 bit)</h3>  
+<h3>x86 Assembly Overview (32 bit)</h3>  
 Instructions follow the format of:  
 
 ```  
@@ -54,16 +54,18 @@ instruction dest_operand, source_operand
 
 ```  
 
-<h4>A few common instructions</h4>  
+<h4>A Few Common Instructions</h4>  
 Movement of data  
 - MOV  
 - LEA  
+
 Math/logic  
 - ADD  
 - SUB  
 - OR  
 - XOR  
 - AND  
+
 Control flow  
 - CMP  
 - JMP  
@@ -83,13 +85,16 @@ Data Registers
 - ECX: Count, for loop counts (programmers: this is "i") and function params.  
 - EDX: Data, general use and function params.  
 - Internally labeled boxes are subregisters which can be used.   
+
 Index Registers  
 - ESI: Source Index, often stores constants or used as a pointer.  
 - EDI: Destination Index, often a destination for data or used as a pointer.  
+
 Pointers  
 - Points to a memory location.  
 - ESP: Stores a pointer to top of stack.  
 - EBP: Stores a pointer to base of current stack frame.  
+
 Flags  
 Certain instructions change flags, which are represented as simple "1" or "0" on a flag register. For example, if we perform an "add" between two numbers, we may have a few outcomes that we need to be aware of. Let's say we compare two values to see if they are equal with CMP EDX, EAX. The "zero flag" will either be set to 1 if they are equal, or 0 if they are not. An instruction like JZ 0x40154b that jumps to memory location 0x40154b if the comparison equaled to zero would check this flag. Think of these as boolean variables. There are a handful of flags to learn, but a few to get you started are:  
 - ZF, "zero flag," set if result is 0.  
@@ -106,6 +111,7 @@ EBP always points to the base of the stack frame
 ESP always points to top of stack  
 - Increases as values are popped off of the stack. This is so you will eventually be set to your base pointer.   
 - Decreases as values are added to the stack. This is so you cannot go into the negatives where memory addresses no longer exit.  
+
 How it works  
 - When a function is called, the current EBP is pushed onto the stack.  
 - EBP is then assigned the value of ESP; EBP is now the base pointer to access vars and params.  
@@ -119,12 +125,14 @@ We have a few ways to address things.
 - Register addressing, aka using the direct register references.  
 - Immediate addressing, where we give an immediate value.  
 - Memory addressing, where we use a memory address. Direct memory addressing is when we reference the effective address of a memory location directly, eg "JMP 0x401438" jumps directly to memory address 0x401438. Indirect memory addressing, eg "JMP [EAX]" jumps directly to the memory address stored in EAX.  
+
 Addressing examples:  
 - Register to register (eg, MOV EDX, EAX copies data in EAX to EDX).  
 - Register to memory (eg, MOV [EDX], EAX copies data in EAX to memory address in EDX).  
 - Memory to register (eg, MOV EDX, [EAX] copies the data at memory address in EAX to EDX).  
 - Immediate to register (eg, MOVe EDX, 0x05 copies hex value 5 to EDX).  
 - Immediate to memory (eg, MOV [EDX], 0x05 copies hex value 5 to memory address in EDX).  
+
 Note there is no "to immediate." This is because you can store things at a memory location, or within a register, but you cannot store things at decimal value "10" for example. Spoken as a analogy, you can store apples in a bucket, you can store apples at a street address for a bucket, but you can't store apples at an apple.  
 
 <h4>File formats</h4>  
@@ -133,6 +141,7 @@ General focuses
 - code (.code, duh)  
 - strings (.rdata)  
 - imported functions (.idata)  
+
 PE  
 PE structure  
 - DOS Header  
@@ -140,6 +149,7 @@ PE structure
 - COFF header  
 - Data Directories  
 - Section Table  
+
 Memory Map  
 - Stack  
 - Heap  
