@@ -97,24 +97,22 @@ Certain instructions change flags, which are represented as simple "1" or "0" on
 - OF, "overflow flag," set if a result was larger than a register can hold. Let us say AL and DL are set to 0xFF. ADD AL, DL would return a 9 bit character and therefore overflow the 8 bit register.  
 
 
-<h4>The call stack</h4>  
-- purposes //todo  
-- parameters //todo   
-- local data //todo   
+<h4>The Call Stack</h4>  
+purposes //todo  
+parameters //todo   
+local data //todo   
 Lets talk about pointers relative to the stack (ESP, EBP) //todo   
 EBP always points to the base of the stack frame  
 ESP always points to top of stack  
 - Increases as values are popped off of the stack. This is so you will eventually be set to your base pointer.   
 - Decreases as values are added to the stack. This is so you cannot go into the negatives where memory addresses no longer exit.  
 How it works  
-1. When a function is called, the current EBP is pushed onto the stack.  
-2. EBP is then assigned the value of ESP; EBP is now the base pointer to access vars and params.  
-3. As function runs, ESP will change as needed, EBP remains static.  
-4. As function terminates, ESP is set to EBP.  
+- When a function is called, the current EBP is pushed onto the stack.  
+- EBP is then assigned the value of ESP; EBP is now the base pointer to access vars and params.  
+- As function runs, ESP will change as needed, EBP remains static.  
+- As function terminates, ESP is set to EBP.  
 - Stack pointer is now set to top of stack to equal the base pointer. This frees memory allocated on the stack for local vars.  
-5. EBP is now popped from the stack (remember, first in last out,) and EBP can be used again as base pointer.  
-6. In simpler terms, stack frames contain the EBP value of the functions caller (step 1.)  
-- Now we can use EBP register as this function's base pointer.  
+- EBP is now popped from the stack (remember, first in last out,) and EBP can be used again as base pointer. In simpler terms, stack frames contain the EBP value of the functions caller (step 1.) Now we can use EBP register as this function's base pointer.  
 
 <h4>Addressing modes</h4>  
 We have a few ways to address things.  
@@ -127,7 +125,7 @@ Addressing examples:
 - Memory to register (eg, MOV EDX, [EAX] copies the data at memory address in EAX to EDX).  
 - Immediate to register (eg, MOVe EDX, 0x05 copies hex value 5 to EDX).  
 - Immediate to memory (eg, MOV [EDX], 0x05 copies hex value 5 to memory address in EDX).  
-    - Note there is no "to immediate." This is because you can store things at a memory location, or within a register, but you cannot store things at decimal value "10" for example. Spoken as a analogy, you can store apples in a bucket, you can store apples at a street address for a bucket, but you can't store apples at an apple.  
+Note there is no "to immediate." This is because you can store things at a memory location, or within a register, but you cannot store things at decimal value "10" for example. Spoken as a analogy, you can store apples in a bucket, you can store apples at a street address for a bucket, but you can't store apples at an apple.  
 
 <h4>File formats</h4>  
 General focuses  
